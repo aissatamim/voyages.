@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>السياحة في تركيا - عالم السياحة</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="country-styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <h1>🌍 عالم السياحة</h1>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html">الرئيسية</a></li>
+                    <li><a href="index.html#destinations">الوجهات</a></li>
+                    <li><a href="index.html#articles">المقالات</a></li>
+                    <li><a href="index.html#contact">اتصل بنا</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Country Hero -->
+    <section class="country-hero">
+        <div class="hero-image">
+            <img src="images/turkey/turkey_1.jpg" alt="تركيا">
+            <div class="hero-overlay">
+                <div class="hero-content">
+                    <h1>🇹🇷 تركيا</h1>
+                    <p>جسر بين الشرق والغرب</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Country Info -->
+    <section class="country-info">
+        <div class="container">
+            <div class="info-grid">
+                <div class="info-text">
+                    <h2>اكتشف سحر تركيا</h2>
+                    <p>تركيا، بلد يجمع بين عراقة التاريخ وحداثة العصر، تقع على مفترق طرق بين آسيا وأوروبا. تشتهر تركيا بتاريخها العريق، معمارها الإسلامي الرائع، مطبخها الشهي، وضيافة شعبها الأصيلة.</p>
+                    
+                    <div class="quick-facts">
+                        <div class="fact">
+                            <span class="fact-icon">🏛️</span>
+                            <div>
+                                <h4>العاصمة</h4>
+                                <p>أنقرة</p>
+                            </div>
+                        </div>
+                        <div class="fact">
+                            <span class="fact-icon">💬</span>
+                            <div>
+                                <h4>اللغة</h4>
+                                <p>التركية</p>
+                            </div>
+                        </div>
+                        <div class="fact">
+                            <span class="fact-icon">💰</span>
+                            <div>
+                                <h4>العملة</h4>
+                                <p>الليرة التركية</p>
+                            </div>
+                        </div>
+                        <div class="fact">
+                            <span class="fact-icon">🌡️</span>
+                            <div>
+                                <h4>أفضل وقت للزيارة</h4>
+                                <p>أبريل - يونيو، سبتمبر - نوفمبر</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="info-image">
+                    <img src="images/turkey/turkey_2.jpg" alt="معالم تركيا">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cities Section -->
+    <section class="cities-section">
+        <div class="container">
+            <h2>أشهر المدن السياحية</h2>
+            <div class="cities-grid">
+                <div class="city-card" onclick="openCityDetails('istanbul')">
+                    <img src="images/turkey/turkey_3.jpg" alt="إسطنبول">
+                    <div class="city-content">
+                        <h3>إسطنبول</h3>
+                        <p>المدينة التي تجمع بين قارتين</p>
+                        <span class="explore-btn">استكشف المدينة</span>
+                    </div>
+                </div>
+
+                <div class="city-card" onclick="openCityDetails('cappadocia')">
+                    <img src="images/turkey/turkey_4.jpg" alt="كابادوكيا">
+                    <div class="city-content">
+                        <h3>كابادوكيا</h3>
+                        <p>أرض المناطيد والتكوينات الصخرية</p>
+                        <span class="explore-btn">استكشف المدينة</span>
+                    </div>
+                </div>
+
+                <div class="city-card" onclick="openCityDetails('antalya')">
+                    <img src="images/turkey/turkey_5.jpg" alt="أنطاليا">
+                    <div class="city-content">
+                        <h3>أنطاليا</h3>
+                        <p>جوهرة الساحل التركي</p>
+                        <span class="explore-btn">استكشف المدينة</span>
+                    </div>
+                </div>
+
+                <div class="city-card" onclick="openCityDetails('pamukkale')">
+                    <img src="images/turkey/turkey_6.jpg" alt="باموكالي">
+                    <div class="city-content">
+                        <h3>باموكالي</h3>
+                        <p>قلعة القطن البيضاء</p>
+                        <span class="explore-btn">استكشف المدينة</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Istanbul Details -->
+    <section id="istanbul-details" class="city-details">
+        <div class="container">
+            <div class="details-header">
+                <h2>إسطنبول - مدينة القارتين</h2>
+                <button class="close-btn" onclick="closeCityDetails()">&times;</button>
+            </div>
+            
+            <div class="details-content">
+                <div class="details-grid">
+                    <div class="details-text">
+                        <h3>🏛️ أهم المعالم السياحية</h3>
+                        <ul>
+                            <li><strong>آيا صوفيا:</strong> تحفة معمارية تجمع بين التاريخ البيزنطي والعثماني</li>
+                            <li><strong>الجامع الأزرق:</strong> مسجد السلطان أحمد بمآذنه الستة</li>
+                            <li><strong>قصر توبكابي:</strong> مقر السلاطين العثمانيين السابق</li>
+                            <li><strong>البازار الكبير:</strong> أحد أقدم وأكبر الأسواق المسقوفة في العالم</li>
+                            <li><strong>مضيق البوسفور:</strong> المضيق الذي يفصل بين آسيا وأوروبا</li>
+                        </ul>
+
+                        <h3>🍽️ الأكل الشعبي</h3>
+                        <ul>
+                            <li><strong>الكباب التركي:</strong> أشهر الأطباق التركية</li>
+                            <li><strong>الدونر:</strong> لحم مشوي على الشاورما</li>
+                            <li><strong>البوريك:</strong> معجنات محشوة بالجبن أو اللحم</li>
+                            <li><strong>الباليك إكميك:</strong> ساندويش السمك الشهير</li>
+                            <li><strong>الشاي التركي:</strong> المشروب الشعبي الأول</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="details-sidebar">
+                        <div class="weather-info">
+                            <h3>🌤️ الطقس</h3>
+                            <p>مناخ معتدل. الصيف دافئ ورطب، الشتاء بارد مع أمطار متقطعة.</p>
+                            <p><strong>أفضل أوقات الزيارة:</strong> أبريل-يونيو، سبتمبر-نوفمبر</p>
+                        </div>
+
+                        <div class="cost-info">
+                            <h3>💰 التكاليف التقديرية</h3>
+                            <ul>
+                                <li>الإقامة: 25-150$ في الليلة</li>
+                                <li>الطعام: 5-30$ للوجبة</li>
+                                <li>التنقل: 0.50-2$ للرحلة</li>
+                                <li>المعالم: 3-20$ للدخول</li>
+                            </ul>
+                        </div>
+
+                        <div class="tips-info">
+                            <h3>💡 نصائح السفر</h3>
+                            <ul>
+                                <li>تعلم بعض الكلمات التركية الأساسية</li>
+                                <li>استخدم بطاقة إسطنبول للمواصلات</li>
+                                <li>تفاوض على الأسعار في الأسواق</li>
+                                <li>جرب الحمام التركي التقليدي</li>
+                                <li>احترم التقاليد المحلية</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="map-section">
+                    <h3>📍 الموقع على الخريطة</h3>
+                    <div class="map-container">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3010.2442!2d28.9784!3d41.0082!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14caa7040068086b%3A0xe1ccfe98bc01b0d0!2sIstanbul%2C%20Turkey!5e0!3m2!1sen!2s!4v1234567890"
+                            width="100%" 
+                            height="300" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy">
+                        </iframe>
+                    </div>
+                </div>
+
+                <div class="booking-links">
+                    <h3>🔗 روابط مفيدة للحجز</h3>
+                    <div class="links-grid">
+                        <a href="https://www.booking.com" target="_blank" class="booking-link">
+                            <span>🏨</span>
+                            <div>
+                                <h4>Booking.com</h4>
+                                <p>حجز الفنادق</p>
+                            </div>
+                        </a>
+                        <a href="https://www.skyscanner.com" target="_blank" class="booking-link">
+                            <span>✈️</span>
+                            <div>
+                                <h4>Skyscanner</h4>
+                                <p>حجز الطيران</p>
+                            </div>
+                        </a>
+                        <a href="https://www.tripadvisor.com" target="_blank" class="booking-link">
+                            <span>🎯</span>
+                            <div>
+                                <h4>TripAdvisor</h4>
+                                <p>الأنشطة والجولات</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- Cappadocia Details -->
+<section id="cappadocia-details" class="city-details">
+    <div class="container">
+        <div class="details-header">
+            <h2>كابادوكيا - أرض المداخن الجنية والمدن تحت الأرض</h2>
+            <button class="close-btn" onclick="closeCityDetails()" aria-label="إغلاق التفاصيل">&times;</button>
+        </div>
+
+        <div class="details-content">
+            <div class="details-grid">
+                <div class="details-text">
+                    <h3>🏞️ أهم المعالم السياحية</h3>
+                    <ul>
+                        <li><strong>حديقة جوريم الوطنية:</strong> موقع تراث عالمي يضم كنائس وكهوف منحوتة في الصخور.</li>
+                        <li><strong>مداخن الجن (Fairy Chimneys):</strong> تكوينات صخرية مخروطية مذهلة تشكلت بفعل الطبيعة.</li>
+                        <li><strong>مدينة ديرينكويو تحت الأرض:</strong> شبكة أنفاق ومساكن استخدمها المسيحيون الأوائل للاختباء.</li>
+                        <li><strong>قلعة أوشيسار:</strong> أعلى نقطة في كابادوكيا توفر إطلالة بانورامية ساحرة.</li>
+                        <li><strong>وادي إهلارا:</strong> وادٍ عميق مليء بالكهوف والكنائس القديمة.</li>
+                        <li><strong>جولات المنطاد الهوائي:</strong> تجربة لا تُنسى عند شروق الشمس فوق التضاريس الغريبة.</li>
+                    </ul>
+
+                    <h3>🍽️ الأكل الشعبي</h3>
+                    <ul>
+                        <li><strong>Testi Kebab:</strong> كباب يُطهى داخل وعاء فخاري يُكسر عند التقديم.</li>
+                        <li><strong>Mantı:</strong> زلابية تركية محشوة باللحم وتُقدم مع الزبادي والثوم.</li>
+                        <li><strong>Gözleme:</strong> فطائر رقيقة محشوة بالجبن أو السبانخ أو البطاطس.</li>
+                        <li><strong>Baklava:</strong> حلوى تركية شهيرة بطبقات من العجين والمكسرات.</li>
+                    </ul>
+                </div>
+
+                <div class="details-sidebar">
+                    <div class="weather-info">
+                        <h3>🌤️ الطقس</h3>
+                        <p>مناخ شبه قاري: صيف حار وجاف، شتاء بارد ومثلج. أفضل وقت للزيارة: أبريل-يونيو، سبتمبر-أكتوبر.</p>
+                    </div>
+
+                    <div class="cost-info">
+                        <h3>💰 التكاليف التقديرية</h3>
+                        <ul>
+                            <li>الإقامة: 40-150€ في الليلة (فنادق الكهوف)</li>
+                            <li>جولة المنطاد: 100-200€ للشخص</li>
+                            <li>الطعام: 10-30€ للوجبة</li>
+                            <li>المعالم: 5-15€ حسب الموقع</li>
+                        </ul>
+                    </div>
+
+                    <div class="tips-info">
+                        <h3>💡 نصائح السفر</h3>
+                        <ul>
+                            <li>احجز جولة المنطاد مبكرًا، خاصة في المواسم السياحية.</li>
+                            <li>استأجر سيارة لاستكشاف القرى والمواقع البعيدة بسهولة.</li>
+                            <li>جرب الإقامة في فنادق الكهوف لتجربة فريدة.</li>
+                            <li>احرص على زيارة المدن تحت الأرض مع دليل سياحي.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="map-section">
+                <h3>📍 الموقع على الخريطة</h3>
+                <div class="map-container">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3038.999999!2d34.8500!3d38.6420!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x152aa2b9e5e0f%3A0xabcdef1234567890!2sCappadocia%2C%20Turkey!5e0!3m2!1sar!2s!4v1700000000000"
+                        width="100%" 
+                        height="300" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+
+            <div class="booking-links">
+                <h3>🔗 روابط مفيدة للحجز</h3>
+                <div class="links-grid">
+                    <a href="https://www.booking.com" target="_blank" rel="noopener noreferrer" class="booking-link">
+                        <span>🏨</span>
+                        <div>
+                            <h4>Booking.com</h4>
+                            <p>فنادق الكهوف والإقامة</p>
+                        </div>
+                    </a>
+                    <a href="https://www.skyscanner.com" target="_blank" rel="noopener noreferrer" class="booking-link">
+                        <span>✈️</span>
+                        <div>
+                            <h4>Skyscanner</h4>
+                            <p>رحلات إلى مطار نوشهير أو قيصري</p>
+                        </div>
+                    </a>
+                    <a href="https://www.tripadvisor.com" target="_blank" rel="noopener noreferrer" class="booking-link">
+                        <span>🎯</span>
+                        <div>
+                            <h4>TripAdvisor</h4>
+                            <p>أنشطة وجولات المنطاد</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Antalya Details -->
+<section id="antalya-details" class="city-details">
+    <div class="container">
+        <div class="details-header">
+            <h2>أنطاليا - لؤلؤة البحر المتوسط التركية</h2>
+            <button class="close-btn" onclick="closeCityDetails()" aria-label="إغلاق التفاصيل">&times;</button>
+        </div>
+
+        <div class="details-content">
+            <div class="details-grid">
+                <div class="details-text">
+                    <h3>🏖️ أهم المعالم السياحية</h3>
+                    <ul>
+                        <li><strong>المدينة القديمة (كاليتشي):</strong> أزقة ضيقة، بيوت عثمانية، وميناء تاريخي ساحر.</li>
+                        <li><strong>شلالات دودين:</strong> تنقسم إلى العليا والسفلى، وتصب مباشرة في البحر الأبيض المتوسط.</li>
+                        <li><strong>أكواريوم أنطاليا:</strong> أكبر نفق مائي في العالم، يضم مخلوقات بحرية مذهلة.</li>
+                        <li><strong>وادي كوبرولو:</strong> موقع طبيعي رائع للتخييم وركوب القوارب، يضم جسرًا رومانيًا قديمًا.</li>
+                        <li><strong>حديقة كاراليوغلو:</strong> متنزه واسع يضم برج هيديرليك الروماني ومسرح المدينة.</li>
+                        <li><strong>شلال كورشونلو:</strong> يقع وسط غابة صنوبرية، مثالي للتنزه والتصوير.</li>
+                    </ul>
+
+                    <h3>🍽️ الأكل الشعبي</h3>
+                    <ul>
+                        <li><strong>كباب أنطاليا:</strong> لحم مشوي بتتبيلة متوسطية مميزة.</li>
+                        <li><strong>Piyaz:</strong> سلطة الفاصوليا البيضاء مع الطحينة والخل، طبق محلي شهير.</li>
+                        <li><strong>Gözleme:</strong> فطائر رقيقة محشوة بالجبن أو السبانخ.</li>
+                        <li><strong>سمك مشوي:</strong> طازج من البحر المتوسط، يُقدم مع الليمون والأعشاب.</li>
+                    </ul>
+                </div>
+
+                <div class="details-sidebar">
+                    <div class="weather-info">
+                        <h3>🌤️ الطقس</h3>
+                        <p>مناخ متوسطي: صيف حار وجاف، شتاء معتدل. أفضل وقت للزيارة: مايو-أكتوبر.</p>
+                    </div>
+
+                    <div class="cost-info">
+                        <h3>💰 التكاليف التقديرية</h3>
+                        <ul>
+                            <li>الإقامة: 50-200€ في الليلة (منتجعات وشقق)</li>
+                            <li>الطعام: 10-40€ للوجبة</li>
+                            <li>الأنشطة: 5-30€ (شلالات، أكواريوم، تلفريك)</li>
+                            <li>التنقل: 1.5€ للرحلة (حافلة/ترام)</li>
+                        </ul>
+                    </div>
+
+                    <div class="tips-info">
+                        <h3>💡 نصائح السفر</h3>
+                        <ul>
+                            <li>احجز الفنادق المطلة على البحر مبكرًا في الصيف.</li>
+                            <li>جرب الرحلات البحرية من ميناء كاليتشي.</li>
+                            <li>استمتع بالتلفريك إلى جبل تونه تيبي لإطلالة بانورامية.</li>
+                            <li>استخدم بطاقة أنطاليا للنقل العام لتوفير الوقت والمال.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="map-section">
+                <h3>📍 الموقع على الخريطة</h3>
+                <div class="map-container">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3038.999999!2d30.6956!3d36.8969!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14c391f8b9e0f%3A0xabcdef1234567890!2sAntalya%2C%20Turkey!5e0!3m2!1sar!2s!4v1700000000000"
+                        width="100%" 
+                        height="300" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+
+            <div class="booking-links">
+                <h3>🔗 روابط مفيدة للحجز</h3>
+                <div class="links-grid">
+                    <a href="https://www.booking.com" target="_blank" rel="noopener noreferrer" class="booking-link">
+                        <span>🏨</span>
+                        <div>
+                            <h4>Booking.com</h4>
+                            <p>منتجعات وفنادق أنطاليا</p>
+                        </div>
+                    </a>
+                    <a href="https://www.skyscanner.com" target="_blank" rel="noopener noreferrer" class="booking-link">
+                        <span>✈️</span>
+                        <div>
+                            <h4>Skyscanner</h4>
+                            <p>رحلات إلى مطار أنطاليا الدولي</p>
+                        </div>
+                    </a>
+                    <a href="https://www.tripadvisor.com" target="_blank" rel="noopener noreferrer" class="booking-link">
+                        <span>🎯</span>
+                        <div>
+                            <h4>TripAdvisor</h4>
+                            <p>أنشطة وشواطئ ومطاعم</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Pamukkale Details -->
+<section id="pamukkale-details" class="city-details">
+    <div class="container">
+        <div class="details-header">
+            <h2>باموكالي - قلعة القطن وأعجوبة الطبيعة التركية</h2>
+            <button class="close-btn" onclick="closeCityDetails()" aria-label="إغلاق التفاصيل">&times;</button>
+        </div>
+
+        <div class="details-content">
+            <div class="details-grid">
+                <div class="details-text">
+                    <h3>🏞️ أهم المعالم السياحية</h3>
+                    <ul>
+                        <li><strong>مدرجات الترافرتين البيضاء:</strong> تكوينات طبيعية مذهلة من الكالسيوم، تبدو كأنها جبال من القطن.</li>
+                        <li><strong>حمامات باموكالي الحرارية:</strong> مياه دافئة غنية بالمعادن، مثالية للاسترخاء والعلاج.</li>
+                        <li><strong>مدينة هيرابوليس القديمة:</strong> أطلال رومانية تشمل مسرحًا ومعابد وكنائس بيزنطية.</li>
+                        <li><strong>حمام كليوباترا:</strong> مسبح أثري يقال إن الملكة كليوباترا كانت تستحم فيه.</li>
+                        <li><strong>كهف كاكليك:</strong> مغارة طبيعية تحتوي على مياه كبريتية وأجواء ساحرة.</li>
+                    </ul>
+
+                    <h3>🍽️ الأكل الشعبي</h3>
+                    <ul>
+                        <li><strong>كباب دنيزلي:</strong> لحم مشوي بتتبيلة محلية.</li>
+                        <li><strong>Mantı:</strong> زلابية تركية محشوة باللحم وتُقدم مع الزبادي.</li>
+                        <li><strong>Baklava:</strong> حلوى تركية شهيرة بطبقات من العجين والمكسرات.</li>
+                        <li><strong>Pide:</strong> بيتزا تركية محلية بأنواع مختلفة من الحشوات.</li>
+                    </ul>
+                </div>
+
+                <div class="details-sidebar">
+                    <div class="weather-info">
+                        <h3>🌤️ الطقس</h3>
+                        <p>مناخ معتدل: صيف حار، شتاء بارد. أفضل وقت للزيارة: أبريل إلى أكتوبر.</p>
+                    </div>
+
+                    <div class="cost-info">
+                        <h3>💰 التكاليف التقديرية</h3>
+                        <ul>
+                            <li>الإقامة: 30-120€ في الليلة (فنادق حرارية)</li>
+                            <li>الدخول إلى المدرجات وهيرابوليس: 10-15€</li>
+                            <li>حمام كليوباترا: 10-20€ إضافية</li>
+                            <li>الطعام: 8-25€ للوجبة</li>
+                        </ul>
+                    </div>
+
+                    <div class="tips-info">
+                        <h3>💡 نصائح السفر</h3>
+                        <ul>
+                            <li>ارتدِ أحذية قابلة للخلع، فالدخول إلى المدرجات يكون حافي القدمين للحفاظ على التكوينات الطبيعية.</li>
+                            <li>احجز فندقًا قريبًا من الينابيع لتجربة الاسترخاء الكامل.</li>
+                            <li>قم بزيارة الموقع في الصباح الباكر لتجنب الزحام والاستمتاع بالضوء الذهبي.</li>
+                            <li>لا تفوت زيارة المسرح الروماني في هيرابوليس.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="map-section">
+                <h3>📍 الموقع على الخريطة</h3>
+                <div class="map-container">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3038.999999!2d29.1228!3d37.9214!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14c6c6a4e5e0f%3A0xabcdef1234567890!2sPamukkale%2C%20Turkey!5e0!3m2!1sar!2s!4v1700000000000"
+                        width="100%" 
+                        height="300" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+
+            <div class="booking-links">
+                <h3>🔗 روابط مفيدة للحجز</h3>
+                <div class="links-grid">
+                    <a href="https://www.booking.com" target="_blank" rel="noopener noreferrer" class="booking-link">
+                        <span>🏨</span>
+                        <div>
+                            <h4>Booking.com</h4>
+                            <p>فنادق حرارية ومنتجعات في باموكالي</p>
+                        </div>
+                    </a>
+                    <a href="https://www.skyscanner.com" target="_blank" rel="noopener noreferrer" class="booking-link">
+                        <span>✈️</span>
+                        <div>
+                            <h4>Skyscanner</h4>
+                            <p>رحلات إلى مطار دنيزلي أو إزمير</p>
+                        </div>
+                    </a>
+                    <a href="https://ar.tripadvisor.com/Tourism-g297992-Pamukkale-Vacations.html" target="_blank" rel="noopener noreferrer" class="booking-link">
+                        <span>🎯</span>
+                        <div>
+                            <h4>TripAdvisor</h4>
+                            <p>أنشطة، مطاعم، تقييمات الزوار</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    <!-- Photo Gallery -->
+    <section class="photo-gallery">
+        <div class="container">
+            <h2>معرض الصور</h2>
+            <div class="gallery-grid">
+                <img src="images/turkey/turkey_1.jpg" alt="تركيا 1" onclick="openLightbox(this)">
+                <img src="images/turkey/turkey_2.jpg" alt="تركيا 2" onclick="openLightbox(this)">
+                <img src="images/turkey/turkey_3.jpg" alt="تركيا 3" onclick="openLightbox(this)">
+                <img src="images/turkey/turkey_4.jpg" alt="تركيا 4" onclick="openLightbox(this)">
+                <img src="images/turkey/turkey_5.jpg" alt="تركيا 5" onclick="openLightbox(this)">
+                <img src="images/turkey/turkey_6.jpg" alt="تركيا 6" onclick="openLightbox(this)">
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox -->
+    <div id="lightbox" class="lightbox">
+        <span class="close-lightbox" onclick="closeLightbox()">&times;</span>
+        <img id="lightbox-img" src="" alt="">
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>عالم السياحة</h3>
+                    <p>دليلك الشامل لاستكشاف أجمل الوجهات السياحية في العالم</p>
+                </div>
+                <div class="footer-section">
+                    <h4>روابط سريعة</h4>
+                    <ul>
+                        <li><a href="index.html">الرئيسية</a></li>
+                        <li><a href="index.html#destinations">الوجهات</a></li>
+                        <li><a href="index.html#articles">المقالات</a></li>
+                        <li><a href="index.html#contact">اتصل بنا</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>الوجهات الشائعة</h4>
+                    <ul>
+                        <li><a href="morocco.html">المغرب</a></li>
+                        <li><a href="france.html">فرنسا</a></li>
+                        <li><a href="turkey.html">تركيا</a></li>
+                        <li><a href="japan.html">اليابان</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 عالم السياحة. جميع الحقوق محفوظة.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="country-script.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>المقالات السياحية - عالم السياحة</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="articles-styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <h1>🌍 عالم السياحة</h1>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html">الرئيسية</a></li>
+                    <li><a href="index.html#destinations">الوجهات</a></li>
+                    <li><a href="articles.html" class="active">المقالات</a></li>
+                    <li><a href="index.html#contact">اتصل بنا</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Articles Hero -->
+    <section class="articles-hero">
+        <div class="container">
+            <h1>المقالات السياحية</h1>
+            <p>اكتشف أفضل النصائح والمعلومات السياحية من خبراء السفر</p>
+        </div>
+    </section>
+
+    <!-- Search and Filter -->
+    <section class="search-filter">
+        <div class="container">
+            <div class="search-box">
+                <input type="text" id="article-search" placeholder="ابحث في المقالات...">
+                <button onclick="searchArticles()">🔍</button>
+            </div>
+            <div class="filter-tags">
+                <button class="tag active" onclick="filterArticles('all')">الكل</button>
+                <button class="tag" onclick="filterArticles('budget')">السفر الاقتصادي</button>
+                <button class="tag" onclick="filterArticles('tips')">نصائح السفر</button>
+                <button class="tag" onclick="filterArticles('destinations')">وجهات سياحية</button>
+                <button class="tag" onclick="filterArticles('culture')">ثقافة وتراث</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Articles Grid -->
+    <section class="articles-section">
+        <div class="container">
+            <div class="articles-grid" id="articles-grid">
+                
+                <!-- Article 1 -->
+                <article class="article-card" data-category="budget">
+                    <div class="article-image">
+                        <img src="images/morocco/morocco_1.jpg" alt="السفر الاقتصادي">
+                        <div class="article-category">السفر الاقتصادي</div>
+                    </div>
+                    <div class="article-content">
+                        <h3>أرخص 10 دول للسفر في 2025</h3>
+                        <p>اكتشف أفضل الوجهات السياحية التي تناسب الميزانيات المحدودة وتقدم تجارب رائعة بأسعار معقولة.</p>
+                        <div class="article-meta">
+                            <span class="date">📅 15 يناير 2025</span>
+                            <span class="read-time">⏱️ 5 دقائق قراءة</span>
+                        </div>
+                        <button class="read-more" onclick="openArticle('budget-travel')">اقرأ المزيد</button>
+                    </div>
+                </article>
+
+                <!-- Article 2 -->
+                <article class="article-card" data-category="tips">
+                    <div class="article-image">
+                        <img src="images/france/france_1.jpg" alt="نصائح السفر">
+                        <div class="article-category">نصائح السفر</div>
+                    </div>
+                    <div class="article-content">
+                        <h3>10 نصائح ذهبية للمسافر الذكي</h3>
+                        <p>نصائح مهمة وعملية تساعدك على السفر بذكاء وتوفير المال والوقت أثناء رحلاتك السياحية.</p>
+                        <div class="article-meta">
+                            <span class="date">📅 12 يناير 2025</span>
+                            <span class="read-time">⏱️ 7 دقائق قراءة</span>
+                        </div>
+                        <button class="read-more" onclick="openArticle('travel-tips')">اقرأ المزيد</button>
+                    </div>
+                </article>
+
+                <!-- Article 3 -->
+                <article class="article-card" data-category="destinations">
+                    <div class="article-image">
+                        <img src="images/japan/japan_1.jpg" alt="وجهات شتوية">
+                        <div class="article-category">وجهات سياحية</div>
+                    </div>
+                    <div class="article-content">
+                        <h3>أفضل الوجهات السياحية في الشتاء</h3>
+                        <p>استكشف أجمل الوجهات التي تزداد سحراً في فصل الشتاء، من الثلوج البيضاء إلى الشواطئ الدافئة.</p>
+                        <div class="article-meta">
+                            <span class="date">📅 10 يناير 2025</span>
+                            <span class="read-time">⏱️ 6 دقائق قراءة</span>
+                        </div>
+                        <button class="read-more" onclick="openArticle('winter-destinations')">اقرأ المزيد</button>
+                    </div>
+                </article>
+
+                <!-- Article 4 -->
+                <article class="article-card" data-category="culture">
+                    <div class="article-image">
+                        <img src="images/turkey/turkey_1.jpg" alt="ثقافة وتراث">
+                        <div class="article-category">ثقافة وتراث</div>
+                    </div>
+                    <div class="article-content">
+                        <h3>آداب السفر: كيف تحترم ثقافات الشعوب</h3>
+                        <p>دليل شامل لفهم واحترام التقاليد والثقافات المختلفة أثناء السفر لضمان تجربة إيجابية للجميع.</p>
+                        <div class="article-meta">
+                            <span class="date">📅 8 يناير 2025</span>
+                            <span class="read-time">⏱️ 8 دقائق قراءة</span>
+                        </div>
+                        <button class="read-more" onclick="openArticle('travel-etiquette')">اقرأ المزيد</button>
+                    </div>
+                </article>
+
+                <!-- Article 5 -->
+                <article class="article-card" data-category="tips">
+                    <div class="article-image">
+                        <img src="images/usa/usa_1.jpg" alt="تطبيقات السفر">
+                        <div class="article-category">نصائح السفر</div>
+                    </div>
+                    <div class="article-content">
+                        <h3>أفضل تطبيقات الهاتف للمسافرين</h3>
+                        <p>مجموعة من أهم التطبيقات التي يحتاجها كل مسافر لتسهيل رحلته وجعلها أكثر متعة وأماناً.</p>
+                        <div class="article-meta">
+                            <span class="date">📅 5 يناير 2025</span>
+                            <span class="read-time">⏱️ 4 دقائق قراءة</span>
+                        </div>
+                        <button class="read-more" onclick="openArticle('travel-apps')">اقرأ المزيد</button>
+                    </div>
+                </article>
+
+                <!-- Article 6 -->
+                <article class="article-card" data-category="budget">
+                    <div class="article-image">
+                        <img src="images/italy/italy_1.jpg" alt="توفير المال">
+                        <div class="article-category">السفر الاقتصادي</div>
+                    </div>
+                    <div class="article-content">
+                        <h3>كيف توفر 50% من تكاليف السفر</h3>
+                        <p>استراتيجيات مجربة وفعالة لتوفير المال في جميع جوانب السفر من الطيران إلى الإقامة والطعام.</p>
+                        <div class="article-meta">
+                            <span class="date">📅 3 يناير 2025</span>
+                            <span class="read-time">⏱️ 9 دقائق قراءة</span>
+                        </div>
+                        <button class="read-more" onclick="openArticle('save-money')">اقرأ المزيد</button>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Article Modal -->
+    <div id="article-modal" class="article-modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeArticle()">&times;</span>
+            <div id="article-content">
+                <!-- Article content will be loaded here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Newsletter Signup -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2>📧 اشترك في نشرتنا الإخبارية</h2>
+                <p>احصل على أحدث المقالات والنصائح السياحية مباشرة في بريدك الإلكتروني</p>
+                <div class="newsletter-form">
+                    <input type="email" placeholder="أدخل بريدك الإلكتروني">
+                    <button onclick="subscribeNewsletter()">اشتراك</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>عالم السياحة</h3>
+                    <p>دليلك الشامل لاستكشاف أجمل الوجهات السياحية في العالم</p>
+                </div>
+                <div class="footer-section">
+                    <h4>روابط سريعة</h4>
+                    <ul>
+                        <li><a href="index.html">الرئيسية</a></li>
+                        <li><a href="index.html#destinations">الوجهات</a></li>
+                        <li><a href="articles.html">المقالات</a></li>
+                        <li><a href="index.html#contact">اتصل بنا</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>الوجهات الشائعة</h4>
+                    <ul>
+                        <li><a href="morocco.html">المغرب</a></li>
+                        <li><a href="france.html">فرنسا</a></li>
+                        <li><a href="turkey.html">تركيا</a></li>
+                        <li><a href="japan.html">اليابان</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 عالم السياحة. جميع الحقوق محفوظة.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="articles-script.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>السياحة في اليابان - عالم السياحة</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="country-styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <h1>🌍 عالم السياحة</h1>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html">الرئيسية</a></li>
+                    <li><a href="index.html#destinations">الوجهات</a></li>
+                    <li><a href="index.html#articles">المقالات</a></li>
+                    <li><a href="index.html#contact">اتصل بنا</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Country Hero -->
+    <section class="country-hero">
+        <div class="hero-image">
+            <img src="images/japan/japan_1.jpg" alt="اليابان">
+            <div class="hero-overlay">
+                <div class="hero-content">
+                    <h1>🇯🇵 اليابان</h1>
+                    <p>أرض الشمس المشرقة</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Country Info -->
+    <section class="country-info">
+        <div class="container">
+            <div class="info-grid">
+                <div class="info-text">
+                    <h2>اكتشف سحر اليابان</h2>
+                    <p>اليابان، أرض الشمس المشرقة، بلد يجمع بين التقاليد العريقة والتكنولوجيا المتطورة. من معابد كيوتو التاريخية إلى ناطحات السحاب في طوكيو، تقدم اليابان تجربة فريدة تمزج بين الماضي والحاضر.</p>
+                    
+                    <div class="quick-facts">
+                        <div class="fact">
+                            <span class="fact-icon">🏛️</span>
+                            <div>
+                                <h4>العاصمة</h4>
+                                <p>طوكيو</p>
+                            </div>
+                        </div>
+                        <div class="fact">
+                            <span class="fact-icon">💬</span>
+                            <div>
+                                <h4>اللغة</h4>
+                                <p>اليابانية</p>
+                            </div>
+                        </div>
+                        <div class="fact">
+                            <span class="fact-icon">💰</span>
+                            <div>
+                                <h4>العملة</h4>
+                                <p>الين الياباني</p>
+                            </div>
+                        </div>
+                        <div class="fact">
+                            <span class="fact-icon">🌡️</span>
+                            <div>
+                                <h4>أفضل وقت للزيارة</h4>
+                                <p>مارس - مايو، سبتمبر - نوفمبر</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="info-image">
+                    <img src="images/japan/japan_2.jpeg" alt="معالم اليابان">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cities Section -->
+    <section class="cities-section">
+        <div class="container">
+            <h2>أشهر المدن السياحية</h2>
+            <div class="cities-grid">
+                <div class="city-card" onclick="openCityDetails('tokyo')">
+                    <img src="images/japan/japan_3.jpg" alt="طوكيو">
+                    <div class="city-content">
+                        <h3>طوكيو</h3>
+                        <p>العاصمة النابضة بالحياة والتكنولوجيا</p>
+                        <span class="explore-btn">استكشف المدينة</span>
+                    </div>
+                </div>
+
+                <div class="city-card" onclick="openCityDetails('kyoto')">
+                    <img src="images/japan/japan_4.jpg" alt="كيوتو">
+                    <div class="city-content">
+                        <h3>كيوتو</h3>
+                        <p>العاصمة الثقافية والتاريخية</p>
+                        <span class="explore-btn">استكشف المدينة</span>
+                    </div>
+                </div>
+
+                <div class="city-card" onclick="openCityDetails('osaka')">
+                    <img src="images/japan/japan_5.jpg" alt="أوساكا">
+                    <div class="city-content">
+                        <h3>أوساكا</h3>
+                        <p>عاصمة الطعام والمرح</p>
+                        <span class="explore-btn">استكشف المدينة</span>
+                    </div>
+                </div>
+
+                <div class="city-card" onclick="openCityDetails('hiroshima')">
+                    <img src="images/japan/japan_6.jpeg" alt="هيروشيما">
+                    <div class="city-content">
+                        <h3>هيروشيما</h3>
+                        <p>مدينة السلام والذكريات</p>
+                        <span class="explore-btn">استكشف المدينة</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tokyo Details -->
+    <section id="tokyo-details" class="city-details">
+        <div class="container">
+            <div class="details-header">
+                <h2>طوكيو - عاصمة المستقبل</h2>
+                <button class="close-btn" onclick="closeCityDetails()">&times;</button>
+            </div>
+            
+            <div class="details-content">
+                <div class="details-grid">
+                    <div class="details-text">
+                        <h3>🏛️ أهم المعالم السياحية</h3>
+                        <ul>
+                            <li><strong>معبد سينسو-جي:</strong> أقدم معبد في طوكيو في منطقة أساكوسا</li>
+                            <li><strong>برج طوكيو:</strong> برج الاتصالات الشهير بإطلالاته الرائعة</li>
+                            <li><strong>حديقة أوينو:</strong> حديقة جميلة مشهورة بأزهار الساكورا</li>
+                            <li><strong>شيبويا كروسينج:</strong> أشهر تقاطع في العالم</li>
+                            <li><strong>القصر الإمبراطوري:</strong> مقر الإمبراطور الياباني</li>
+                        </ul>
+
+                        <h3>🍽️ الأكل الشعبي</h3>
+                        <ul>
+                            <li><strong>السوشي:</strong> أشهر الأطباق اليابانية في العالم</li>
+                            <li><strong>الرامن:</strong> حساء المعكرونة الياباني الشهير</li>
+                            <li><strong>التمبورا:</strong> خضروات وأسماك مقلية بعجينة خاصة</li>
+                            <li><strong>الياكيتوري:</strong> أسياخ الدجاج المشوي</li>
+                            <li><strong>الماتشا:</strong> الشاي الأخضر التقليدي</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="details-sidebar">
+                        <div class="weather-info">
+                            <h3>🌤️ الطقس</h3>
+                            <p>مناخ معتدل مع أربعة فصول متميزة. الصيف حار ورطب، الشتاء بارد وجاف.</p>
+                            <p><strong>أفضل أوقات الزيارة:</strong> مارس-مايو (الساكورا)، سبتمبر-نوفمبر</p>
+                        </div>
+
+                        <div class="cost-info">
+                            <h3>💰 التكاليف التقديرية</h3>
+                            <ul>
+                                <li>الإقامة: 50-300$ في الليلة</li>
+                                <li>الطعام: 8-50$ للوجبة</li>
+                                <li>التنقل: 2-5$ للرحلة</li>
+                                <li>المعالم: 5-30$ للدخول</li>
+                            </ul>
+                        </div>
+
+                        <div class="tips-info">
+                            <h3>💡 نصائح السفر</h3>
+                            <ul>
+                                <li>احصل على JR Pass للقطارات</li>
+                                <li>تعلم بعض العبارات اليابانية الأساسية</li>
+                                <li>احترم الآداب اليابانية والتقاليد</li>
+                                <li>احمل نقود نقدية - ليس كل مكان يقبل البطاقات</li>
+                                <li>اخلع حذاءك عند دخول المنازل والمعابد</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="map-section">
+                    <h3>📍 الموقع على الخريطة</h3>
+                    <div class="map-container">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.8280!2d139.6917!3d35.6895!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188b857628235d%3A0xcdd8aef709a2b520!2sTokyo%2C%20Japan!5e0!3m2!1sen!2s!4v1234567890"
+                            width="100%" 
+                            height="300" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy">
+                        </iframe>
+                    </div>
+                </div>
+
+                <div class="booking-links">
+                    <h3>🔗 روابط مفيدة للحجز</h3>
+                    <div class="links-grid">
+                        <a href="https://www.booking.com" target="_blank" class="booking-link">
+                            <span>🏨</span>
+                            <div>
+                                <h4>Booking.com</h4>
+                                <p>حجز الفنادق</p>
+                            </div>
+                        </a>
+                        <a href="https://www.skyscanner.com" target="_blank" class="booking-link">
+                            <span>✈️</span>
+                            <div>
+                                <h4>Skyscanner</h4>
+                                <p>حجز الطيران</p>
+                            </div>
+                        </a>
+                        <a href="https://www.tripadvisor.com" target="_blank" class="booking-link">
+                            <span>🎯</span>
+                            <div>
+                                <h4>TripAdvisor</h4>
+                                <p>الأنشطة والجولات</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- Kyoto Details -->
+<section id="kyoto-details" class="city-details">
+    <div class="container">
+        <div class="details-header">
+            <h2>كيوتو - عاصمة التقاليد اليابانية</h2>
+            <button class="close-btn" onclick="closeCityDetails()" aria-label="إغلاق التفاصيل">&times;</button>
+        </div>
+        
+        <div class="details-content">
+            <div class="details-grid">
+                <div class="details-text">
+                    <h3>🏯 أهم المعالم السياحية</h3>
+                    <ul>
+                        <li><strong>معبد كينكاكوجي (Kinkaku-ji):</strong> المعبد الذهبي وسط حدائق وبحيرة ساحرة.</li>
+                        <li><strong>ضريح فوشيمي إيناري:</strong> آلاف البوابات الحمراء "توري" على جبل مقدس.</li>
+                        <li><strong>معبد كيوميزو-ديرا:</strong> معبد تاريخي بإطلالة بانورامية على المدينة.</li>
+                        <li><strong>غابة أراشيياما:</strong> ممرات خلابة وسط أشجار البامبو.</li>
+                        <li><strong>سوق نيشيكي:</strong> "مطبخ كيوتو" التقليدي بأكثر من 100 متجر.</li>
+                    </ul>
+
+                    <h3>🍱 الأكل الشعبي</h3>
+                    <ul>
+                        <li><strong>كايسكي (Kaiseki):</strong> وجبة متعددة الأطباق تمثل فن الطهي الياباني.</li>
+                        <li><strong>يو دوفو (Yudofu):</strong> توفو مسلوق يقدم مع صوص خفيف.</li>
+                        <li><strong>واكاشي (Wagashi):</strong> حلويات تقليدية تُقدم مع الشاي الأخضر.</li>
+                        <li><strong>شاي أوجي:</strong> من أجود أنواع الشاي الأخضر في اليابان.</li>
+                        <li><strong>رامن كيوتو:</strong> نكهة محلية مميزة من حساء الرامن.</li>
+                    </ul>
+                </div>
+                
+                <div class="details-sidebar">
+                    <div class="weather-info">
+                        <h3>🌤️ الطقس</h3>
+                        <p>مناخ معتدل: ربيع مزهر وخريف ملون. أفضل الأوقات للزيارة: مارس-مايو، أكتوبر-نوفمبر.</p>
+                    </div>
+
+                    <div class="cost-info">
+                        <h3>💰 التكاليف التقديرية</h3>
+                        <ul>
+                            <li>الإقامة: 60-250€ في الليلة</li>
+                            <li>الطعام: 10-40€ للوجبة</li>
+                            <li>التنقل: 2-3€ للرحلة (ميترو/حافلة)</li>
+                            <li>المعالم: 5-20€ لمعظم المعابد والمواقع</li>
+                        </ul>
+                    </div>
+
+                    <div class="tips-info">
+                        <h3>💡 نصائح السفر</h3>
+                        <ul>
+                            <li>زر المعابد في الصباح لتجنب الزحام.</li>
+                            <li>استمتع بالمشي في شوارع هيغاشياما التقليدية.</li>
+                            <li>استخدم بطاقة "Kyoto City Pass" للتوفير في التنقل.</li>
+                            <li>احترم العادات المحلية خاصة في مناطق الغيشا.</li>
+                            <li>لا تفوّت مهرجان "غيون ماتسوري" في يوليو.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="map-section">
+                <h3>📍 الموقع على الخريطة</h3>
+                <div class="map-container">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13153.999999!2d135.7681!3d35.0116!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6001088c2f8b9e0f%3A0xabcdef1234567890!2sKyoto%2C%20Japan!5e0!3m2!1sar!2s!4v1700000000000"
+                        width="100%" 
+                        height="300" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+
+            <div class="booking-links">
+                <h3>🔗 روابط مفيدة للحجز</h3>
+                <div class="links-grid">
+                    <a href="https://www.booking.com" target="_blank" rel="noopener noreferrer" class="booking-link">
+                        <span>🏨</span>
+                        <div>
+                            <h4>Booking.com</h4>
+                            <p>حجز الفنادق</p>
+                        </div>
+                    </a>
+                    <a href="https://www.skyscanner.com" target="_blank" rel="noopener noreferrer" class="booking-link">
+                        <span>✈️</span>
+                        <div>
+                            <h4>Skyscanner</h4>
+                            <p>حجز الطيران</p>
+                        </div>
+                    </a>
+                    <a href="https://www.tripadvisor.com" target="_blank" rel="noopener noreferrer" class="booking-link">
+                        <span>🎯</span>
+                        <div>
+                            <h4>TripAdvisor</h4>
+                            <p>الأنشطة والجولات</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Osaka Details -->
+<section id="osaka-details" class="city-details">
+    <div class="container">
+        <div class="details-header">
+            <h2>أوساكا - مطبخ اليابان وروحها النابضة</h2>
+            <button class="close-btn" onclick="closeCityDetails()" aria-label="إغلاق التفاصيل">&times;</button>
+        </div>
+        
+        <div class="details-content">
+            <div class="details-grid">
+                <div class="details-text">
+                    <h3>🏯 أهم المعالم السياحية</h3>
+                    <ul>
+                        <li><strong>قلعة أوساكا (Osaka Castle):</strong> رمز تاريخي محاط بحدائق خلابة.</li>
+                        <li><strong>منطقة دوتونبوري (Dotonbori):</strong> مركز الحياة الليلية والمطاعم تحت أضواء النيون.</li>
+                        <li><strong>استوديوهات يونيفرسال اليابان:</strong> مدينة ملاهي عالمية مليئة بالتجارب السينمائية.</li>
+                        <li><strong>أكواريوم كايوكان:</strong> أحد أكبر أحواض الأسماك في العالم.</li>
+                        <li><strong>دين دين تاون:</strong> حي الإلكترونيات المشابه لأكيهابارا بطوكيو.</li>
+                    </ul>
+
+                    <h3>🍜 الأكل الشعبي</h3>
+                    <ul>
+                        <li><strong>تاكوياكي (Takoyaki):</strong> كرات الأخطبوط المقلية الشهيرة.</li>
+                        <li><strong>أوكونومياكي (Okonomiyaki):</strong> فطيرة يابانية محشوة بالخضار واللحم.</li>
+                        <li><strong>كوشيكاتسو (Kushikatsu):</strong> قطع لحم وخضار مقلية على أعواد.</li>
+                        <li><strong>رامن حلال:</strong> متوفر في مطاعم مثل Ayam-YA وNaritaya.</li>
+                        <li><strong>مطاعم مغربية وهندية:</strong> مثل Marrakech وAli’s Kitchen تقدم خيارات حلال للمسافرين العرب.</li>
+                    </ul>
+                </div>
+                
+                <div class="details-sidebar">
+                    <div class="weather-info">
+                        <h3>🌤️ الطقس</h3>
+                        <p>مناخ معتدل: صيف حار ورطب، شتاء بارد نسبياً. أفضل الأوقات للزيارة: أبريل-مايو، أكتوبر-نوفمبر.</p>
+                    </div>
+
+                    <div class="cost-info">
+                        <h3>💰 التكاليف التقديرية</h3>
+                        <ul>
+                            <li>الإقامة: 50-180€ في الليلة</li>
+                            <li>الطعام: 10-35€ للوجبة</li>
+                            <li>التنقل: 2.5€ للرحلة (ميترو/حافلة)</li>
+                            <li>المعالم: 5-25€ حسب النشاط</li>
+                        </ul>
+                    </div>
+
+                    <div class="tips-info">
+                        <h3>💡 نصائح السفر</h3>
+                        <ul>
+                            <li>استخدم بطاقة Osaka Amazing Pass للدخول المجاني للعديد من المعالم.</li>
+                            <li>السكن في نامبا أو أوميدا يسهل التنقل والوصول للمطاعم.</li>
+                            <li>زر مسجد أوساكا المركزي للصلاة وتناول الطعام الحلال.</li>
+                            <li>استمتع بالتسوق في شينسايباشي ودين دين تاون.</li>
+                            <li>احجز تذاكر يونيفرسال ستوديوز مسبقًا لتجنب الطوابير.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="map-section">
+                <h3>📍 الموقع على الخريطة</h3>
+                <div class="map-container">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13153.999999!2d135.5021!3d34.6937!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000e0d3b2f8b9e0%3A0xabcdef1234567890!2sOsaka%2C%20Japan!5e0!3m2!1sar!2s!4v1700000000000"
+                        width="100%" 
+                        height="300" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+
+            <div class="booking-links">
+                <h3>🔗 روابط مفيدة للحجز</h3>
+                <div class="links-grid">
+                    <a href="https://www.booking.com" target="_blank" rel="noopener noreferrer" class="booking-link">
+                        <span>🏨</span>
+                        <div>
+                            <h4>Booking.com</h4>
+                            <p>حجز الفنادق</p>
+                        </div>
+                    </a>
+                    <a href="https://www.skyscanner.com" target="_blank" rel="noopener noreferrer" class="booking-link">
+                        <span>✈️</span>
+                        <div>
+                            <h4>Skyscanner</h4>
+                            <p>حجز الطيران</p>
+                        </div>
+                    </a>
+                    <a href="https://www.tripadvisor.com" target="_blank" rel="noopener noreferrer" class="booking-link">
+                        <span>🎯</span>
+                        <div>
+                            <h4>TripAdvisor</h4>
+                            <p>الأنشطة والجولات</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Hiroshima Details -->
+<section id="hiroshima-details" class="city-details">
+    <div class="container">
+        <div class="details-header">
+            <h2>هيروشيما - مدينة السلام والنهوض من الرماد</h2>
+            <button class="close-btn" onclick="closeCityDetails()" aria-label="إغلاق التفاصيل">&times;</button>
+        </div>
+        
+        <div class="details-content">
+            <div class="details-grid">
+                <div class="details-text">
+                    <h3>🏛️ أهم المعالم السياحية</h3>
+                    <ul>
+                        <li><strong>نصب السلام التذكاري (Peace Memorial Park):</strong> موقع تاريخي يخلد ذكرى ضحايا القنبلة الذرية.</li>
+                        <li><strong>قبة جينباكو (Atomic Bomb Dome):</strong> مبنى نجا جزئيًا من الانفجار، وأصبح رمزًا عالميًا للسلام.</li>
+                        <li><strong>متحف هيروشيما للسلام:</strong> يعرض آثار القصف وقصص الناجين.</li>
+                        <li><strong>قلعة هيروشيما:</strong> قلعة تاريخية أعيد بناؤها وسط حديقة جميلة.</li>
+                        <li><strong>جزيرة مياجيما:</strong> تضم ضريح إيتسوكوشيما الشهير العائم على الماء.</li>
+                    </ul>
+
+                    <h3>🍱 الأكل الشعبي</h3>
+                    <ul>
+                        <li><strong>أوكونومياكي هيروشيما:</strong> فطيرة يابانية بطبقات من الخضار واللحم والنودلز.</li>
+                        <li><strong>المحار المشوي:</strong> تشتهر به جزيرة مياجيما.</li>
+                        <li><strong>رامن هيروشيما:</strong> نكهة محلية مميزة من حساء الرامن.</li>
+                        <li><strong>ساكي محلي:</strong> مشروب أرز تقليدي يُصنع في مصانع المدينة.</li>
+                        <li><strong>حلويات موميجيمانجو:</strong> كعكة على شكل ورقة القيقب محشوة بالفاصوليا الحلوة أو الكاسترد.</li>
+                    </ul>
+                </div>
+                
+                <div class="details-sidebar">
+                    <div class="weather-info">
+                        <h3>🌤️ الطقس</h3>
+                        <p>مناخ معتدل: صيف دافئ ورطب، شتاء بارد. أفضل الأوقات للزيارة: أبريل-مايو، أكتوبر-نوفمبر.</p>
+                    </div>
+
+                    <div class="cost-info">
+                        <h3>💰 التكاليف التقديرية</h3>
+                        <ul>
+                            <li>الإقامة: 50-150€ في الليلة</li>
+                            <li>الطعام: 10-30€ للوجبة</li>
+                            <li>التنقل: 2€ للرحلة (ميترو/ترام)</li>
+                            <li>المعالم: 0-15€ حسب الموقع</li>
+                        </ul>
+                    </div>
+
+                    <div class="tips-info">
+                        <h3>💡 نصائح السفر</h3>
+                        <ul>
+                            <li>ابدأ زيارتك بنصب السلام لفهم تاريخ المدينة.</li>
+                            <li>استقل العبّارة إلى جزيرة مياجيما لقضاء يوم هادئ.</li>
+                            <li>احترم الطابع التأملي للمواقع التذكارية.</li>
+                            <li>استخدم بطاقة "Hiroshima Tourist Pass" للتوفير في التنقل.</li>
+                            <li>جرب الأوكونومياكي في المطاعم المحلية المتخصصة.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="map-section">
+                <h3>📍 الموقع على الخريطة</h3>
+                <div class="map-container">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13153.999999!2d132.4553!3d34.3852!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x355aa2b2f8b9e0f%3A0xabcdef1234567890!2sHiroshima%2C%20Japan!5e0!3m2!1sar!2s!4v1700000000000"
+                        width="100%" 
+                        height="300" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+
+            <div class="booking-links">
+                <h3>🔗 روابط مفيدة للحجز</h3>
+                <div class="links-grid">
+                    <a href="https://www.booking.com" target="_blank" rel="noopener noreferrer" class="booking-link">
+                        <span>🏨</span>
+                        <div>
+                            <h4>Booking.com</h4>
+                            <p>حجز الفنادق</p>
+                        </div>
+                    </a>
+                    <a href="https://www.skyscanner.com" target="_blank" rel="noopener noreferrer" class="booking-link">
+                        <span>✈️</span>
+                        <div>
+                            <h4>Skyscanner</h4>
+                            <p>حجز الطيران</p>
+                        </div>
+                    </a>
+                    <a href="https://www.tripadvisor.com" target="_blank" rel="noopener noreferrer" class="booking-link">
+                        <span>🎯</span>
+                        <div>
+                            <h4>TripAdvisor</h4>
+                            <p>الأنشطة والجولات</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    <!-- Photo Gallery -->
+    <section class="photo-gallery">
+        <div class="container">
+            <h2>معرض الصور</h2>
+            <div class="gallery-grid">
+                <img src="images/japan/japan_1.jpg" alt="اليابان 1" onclick="openLightbox(this)">
+                <img src="images/japan/japan_2.jpeg" alt="اليابان 2" onclick="openLightbox(this)">
+                <img src="images/japan/japan_3.jpg" alt="اليابان 3" onclick="openLightbox(this)">
+                <img src="images/japan/japan_4.jpg" alt="اليابان 4" onclick="openLightbox(this)">
+                <img src="images/japan/japan_5.jpg" alt="اليابان 5" onclick="openLightbox(this)">
+                <img src="images/japan/japan_6.jpeg" alt="اليابان 6" onclick="openLightbox(this)">
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox -->
+    <div id="lightbox" class="lightbox">
+        <span class="close-lightbox" onclick="closeLightbox()">&times;</span>
+        <img id="lightbox-img" src="" alt="">
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>عالم السياحة</h3>
+                    <p>دليلك الشامل لاستكشاف أجمل الوجهات السياحية في العالم</p>
+                </div>
+                <div class="footer-section">
+                    <h4>روابط سريعة</h4>
+                    <ul>
+                        <li><a href="index.html">الرئيسية</a></li>
+                        <li><a href="index.html#destinations">الوجهات</a></li>
+                        <li><a href="index.html#articles">المقالات</a></li>
+                        <li><a href="index.html#contact">اتصل بنا</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>الوجهات الشائعة</h4>
+                    <ul>
+                        <li><a href="morocco.html">المغرب</a></li>
+                        <li><a href="france.html">فرنسا</a></li>
+                        <li><a href="turkey.html">تركيا</a></li>
+                        <li><a href="japan.html">اليابان</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 عالم السياحة. جميع الحقوق محفوظة.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="country-script.js"></script>
+</body>
+</html>
+

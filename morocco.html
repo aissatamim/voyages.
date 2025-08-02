@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>السياحة في المغرب - عالم السياحة</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="country-styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <h1>🌍 عالم السياحة</h1>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html">الرئيسية</a></li>
+                    <li><a href="index.html#destinations">الوجهات</a></li>
+                    <li><a href="index.html#articles">المقالات</a></li>
+                    <li><a href="index.html#contact">اتصل بنا</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Country Hero -->
+    <section class="country-hero">
+        <div class="hero-image">
+            <img src="images/morocco/morocco_1.jpg" alt="المغرب">
+            <div class="hero-overlay">
+                <div class="hero-content">
+                    <h1>🇲🇦 المغرب</h1>
+                    <p>المدينة الحمراء وجمال الصحراء</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Country Info -->
+    <section class="country-info">
+        <div class="container">
+            <div class="info-grid">
+                <div class="info-text">
+                    <h2>اكتشف سحر المغرب</h2>
+                    <p>المغرب، بلد الألف لون ولون، يقع في شمال غرب أفريقيا ويطل على البحر الأبيض المتوسط والمحيط الأطلسي. يشتهر المغرب بتنوعه الثقافي الغني، معماره الإسلامي الرائع، وضيافة شعبه الأصيلة.</p>
+                    
+                    <div class="quick-facts">
+                        <div class="fact">
+                            <span class="fact-icon">🏛️</span>
+                            <div>
+                                <h4>العاصمة</h4>
+                                <p>الرباط</p>
+                            </div>
+                        </div>
+                        <div class="fact">
+                            <span class="fact-icon">💬</span>
+                            <div>
+                                <h4>اللغة</h4>
+                                <p>العربية، الأمازيغية، الفرنسية</p>
+                            </div>
+                        </div>
+                        <div class="fact">
+                            <span class="fact-icon">💰</span>
+                            <div>
+                                <h4>العملة</h4>
+                                <p>الدرهم المغربي</p>
+                            </div>
+                        </div>
+                        <div class="fact">
+                            <span class="fact-icon">🌡️</span>
+                            <div>
+                                <h4>أفضل وقت للزيارة</h4>
+                                <p>مارس - مايو، سبتمبر - نوفمبر</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="info-image">
+                    <img src="images/morocco/morocco_2.jpg" alt="معالم المغرب">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cities Section -->
+    <section class="cities-section">
+        <div class="container">
+            <h2>أشهر المدن السياحية</h2>
+            <div class="cities-grid">
+                <div class="city-card" onclick="openCityDetails('marrakech')">
+                    <img src="images/morocco/morocco_3.jpg" alt="مراكش">
+                    <div class="city-content">
+                        <h3>مراكش</h3>
+                        <p>المدينة الحمراء وقلب المغرب النابض</p>
+                        <span class="explore-btn">استكشف المدينة</span>
+                    </div>
+                </div>
+
+                <div class="city-card" onclick="openCityDetails('casablanca')">
+                    <img src="images/morocco/morocco_4.jpg" alt="الدار البيضاء">
+                    <div class="city-content">
+                        <h3>الدار البيضاء</h3>
+                        <p>العاصمة الاقتصادية والمدينة العصرية</p>
+                        <span class="explore-btn">استكشف المدينة</span>
+                    </div>
+                </div>
+
+                <div class="city-card" onclick="openCityDetails('fes')">
+                    <img src="images/morocco/morocco_5.jpg" alt="فاس">
+                    <div class="city-content">
+                        <h3>فاس</h3>
+                        <p>العاصمة الثقافية والروحية للمغرب</p>
+                        <span class="explore-btn">استكشف المدينة</span>
+                    </div>
+                </div>
+
+                <div class="city-card" onclick="openCityDetails('chefchaouen')">
+                    <img src="images/morocco/morocco_6.jpg" alt="شفشاون">
+                    <div class="city-content">
+                        <h3>شفشاون</h3>
+                        <p>المدينة الزرقاء الساحرة</p>
+                        <span class="explore-btn">استكشف المدينة</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Marrakech Details -->
+    <section id="marrakech-details" class="city-details">
+        <div class="container">
+            <div class="details-header">
+                <h2>مراكش - المدينة الحمراء</h2>
+                <button class="close-btn" onclick="closeCityDetails()">&times;</button>
+            </div>
+            
+            <div class="details-content">
+                <div class="details-grid">
+                    <div class="details-text">
+                        <h3>🏛️ أهم المعالم السياحية</h3>
+                        <ul>
+                            <li><strong>ساحة جامع الفنا:</strong> قلب مراكش النابض وموقع تراث عالمي لليونسكو</li>
+                            <li><strong>حدائق ماجوريل:</strong> واحة هادئة بألوانها الزرقاء الزاهية</li>
+                            <li><strong>قصر الباهية:</strong> قصر رائع يعكس الفن المعماري المغربي</li>
+                            <li><strong>جامع الكتبية:</strong> أحد أكبر المساجد في مراكش</li>
+                            <li><strong>مدرسة بن يوسف:</strong> مدرسة قرآنية تاريخية</li>
+                        </ul>
+
+                        <h3>🍽️ الأكل الشعبي</h3>
+                        <ul>
+                            <li><strong>الطنجية المراكشية:</strong> طبق لحم مطبوخ في جرة فخارية</li>
+                            <li><strong>الكسكس:</strong> طبق مغربي تقليدي</li>
+                            <li><strong>الطاجين:</strong> طبق مطبوخ في وعاء فخاري</li>
+                            <li><strong>الحريرة:</strong> حساء مغربي تقليدي</li>
+                            <li><strong>الشاي بالنعناع:</strong> المشروب الوطني للمغرب</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="details-sidebar">
+                        <div class="weather-info">
+                            <h3>🌤️ الطقس</h3>
+                            <p>مناخ شبه جاف. الصيف حار وجاف، الشتاء معتدل ورطب نسبياً.</p>
+                            <p><strong>أفضل أوقات الزيارة:</strong> مارس-مايو، سبتمبر-نوفمبر</p>
+                        </div>
+
+                        <div class="cost-info">
+                            <h3>💰 التكاليف التقديرية</h3>
+                            <ul>
+                                <li>الإقامة: 30-150$ في الليلة</li>
+                                <li>الطعام: 5-25$ للوجبة</li>
+                                <li>التنقل: 1-10$ للرحلة</li>
+                                <li>المعالم: 2-15$ للدخول</li>
+                            </ul>
+                        </div>
+
+                        <div class="tips-info">
+                            <h3>💡 نصائح السفر</h3>
+                            <ul>
+                                <li>تفاوض على الأسعار في الأسواق</li>
+                                <li>احذر من المرشدين غير الرسميين</li>
+                                <li>ارتدِ ملابس محتشمة</li>
+                                <li>اشرب الكثير من الماء</li>
+                                <li>كن حذراً في الأماكن المزدحمة</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="map-section">
+                    <h3>📍 الموقع على الخريطة</h3>
+                    <div class="map-container">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3397.175!2d-7.9811!3d31.6295!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xdafee8d96179e51%3A0x5950b6534f87adb8!2sMarrakech%2C%20Morocco!5e0!3m2!1sen!2s!4v1234567890"
+                            width="100%" 
+                            height="300" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy">
+                        </iframe>
+                    </div>
+                </div>
+
+                <div class="booking-links">
+                    <h3>🔗 روابط مفيدة للحجز</h3>
+                    <div class="links-grid">
+                        <a href="https://www.booking.com" target="_blank" class="booking-link">
+                            <span>🏨</span>
+                            <div>
+                                <h4>Booking.com</h4>
+                                <p>حجز الفنادق</p>
+                            </div>
+                        </a>
+                        <a href="https://www.skyscanner.com" target="_blank" class="booking-link">
+                            <span>✈️</span>
+                            <div>
+                                <h4>Skyscanner</h4>
+                                <p>حجز الطيران</p>
+                            </div>
+                        </a>
+                        <a href="https://www.tripadvisor.com" target="_blank" class="booking-link">
+                            <span>🎯</span>
+                            <div>
+                                <h4>TripAdvisor</h4>
+                                <p>الأنشطة والجولات</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Photo Gallery -->
+    <section class="photo-gallery">
+        <div class="container">
+            <h2>معرض الصور</h2>
+            <div class="gallery-grid">
+                <img src="images/morocco/morocco_1.jpg" alt="المغرب 1" onclick="openLightbox(this)">
+                <img src="images/morocco/morocco_2.jpg" alt="المغرب 2" onclick="openLightbox(this)">
+                <img src="images/morocco/morocco_3.jpg" alt="المغرب 3" onclick="openLightbox(this)">
+                <img src="images/morocco/morocco_4.jpg" alt="المغرب 4" onclick="openLightbox(this)">
+                <img src="images/morocco/morocco_5.jpg" alt="المغرب 5" onclick="openLightbox(this)">
+                <img src="images/morocco/morocco_6.jpg" alt="المغرب 6" onclick="openLightbox(this)">
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox -->
+    <div id="lightbox" class="lightbox">
+        <span class="close-lightbox" onclick="closeLightbox()">&times;</span>
+        <img id="lightbox-img" src="" alt="">
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>عالم السياحة</h3>
+                    <p>دليلك الشامل لاستكشاف أجمل الوجهات السياحية في العالم</p>
+                </div>
+                <div class="footer-section">
+                    <h4>روابط سريعة</h4>
+                    <ul>
+                        <li><a href="index.html">الرئيسية</a></li>
+                        <li><a href="index.html#destinations">الوجهات</a></li>
+                        <li><a href="index.html#articles">المقالات</a></li>
+                        <li><a href="index.html#contact">اتصل بنا</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>الوجهات الشائعة</h4>
+                    <ul>
+                        <li><a href="morocco.html">المغرب</a></li>
+                        <li><a href="france.html">فرنسا</a></li>
+                        <li><a href="turkey.html">تركيا</a></li>
+                        <li><a href="japan.html">اليابان</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 عالم السياحة. جميع الحقوق محفوظة.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="country-script.js"></script>
+    <!-- Casablanca Details -->
+<section id="casablanca-details" class="city-details">
+    <div class="container">
+        <div class="details-header">
+            <h2>الدار البيضاء - القلب الاقتصادي</h2>
+            <button class="close-btn" onclick="closeCityDetails()" aria-label="إغلاق التفاصيل">&times;</button>
+        </div>
+        
+        <div class="details-content">
+            <div class="details-grid">
+                <div class="details-text">
+                    <h3>🏛️ أهم المعالم السياحية</h3>
+                    <ul>
+                        <li><strong>مسجد الحسن الثاني:</strong> أحد أكبر المساجد في العالم ويطل على المحيط الأطلسي</li>
+                        <li><strong>كورنيش عين الذياب:</strong> منطقة ساحلية حيوية للمشي وتناول المأكولات البحرية</li>
+                        <li><strong>المدينة القديمة (المدينة العتيقة):</strong> للتجول في الأسواق التقليدية</li>
+                        <li><strong>المركز المالي والأحياء الحديثة:</strong> مثل مركز الأعمال "لا كورنيش" وشارع محمد الخامس</li>
+                        <li><strong>الميناء والعمران البحري:</strong> مناظر بحرية ونشاطات تجارية</li>
+                    </ul>
+
+                    <h3>🍽️ الأكل الشعبي</h3>
+                    <ul>
+                        <li><strong>المأكولات البحرية الطازجة:</strong> خاصة في كورنيش عين الذياب</li>
+                        <li><strong>البسطيلة:</strong> حلوى أو طبق دجاج/حمّام محشو بالعجين</li>
+                        <li><strong>الطاجين:</strong> الأطباق المغربية التقليدية المتنوعة</li>
+                        <li><strong>الحريرة:</strong> حساء مغربي تقليدي، شائع خاصة في رمضان</li>
+                        <li><strong>السندويتشات المحلية (مثل "البيغ"): </strong>سريعة ومشهورَة في الشوارع</li>
+                    </ul>
+                </div>
+                
+                <div class="details-sidebar">
+                    <div class="weather-info">
+                        <h3>🌤️ الطقس</h3>
+                        <p>مناخ بحري معتدل: صيف دافئ ورطب نسبيًا، وشتاء معتدل مع أمطار خفيفة.</p>
+                        <p><strong>أفضل أوقات الزيارة:</strong> مارس-مايو، سبتمبر-نوفمبر</p>
+                    </div>
+
+                    <div class="cost-info">
+                        <h3>💰 التكاليف التقديرية</h3>
+                        <ul>
+                            <li>الإقامة: 35-180$ في الليلة</li>
+                            <li>الطعام: 7-30$ للوجبة</li>
+                            <li>التنقل: 1-15$ للرحلة (طاكسي/ترامواي)</li>
+                            <li>المعالم: 3-20$ للدخول</li>
+                        </ul>
+                    </div>
+
+                    <div class="tips-info">
+                        <h3>💡 نصائح السفر</h3>
+                        <ul>
+                            <li>استخدم الترامواي للتنقل بفعالية وتجنب الزحمة المرورية</li>
+                            <li>تحقق من أوقات الصلاة إذا كنت تزور المساجد، وارتدِ ملابس مناسبة</li>
+                            <li>تفاوض بحذر في الأسواق، واطلب السعر أولاً</li>
+                            <li>انتبه للمتسولين في المناطق السياحية المزدحمة</li>
+                            <li>جرب المأكولات البحرية في الكورنيش، واطلب توصية من السكان المحليين</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="map-section">
+                <h3>📍 الموقع على الخريطة</h3>
+                <div class="map-container">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3303.8!2d-7.6111!3d33.5899!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xdaf7f0f0e6c3d7f%3A0x3e0a5b1b2c4a9f1b!2sCasablanca%2C%20Morocco!5e0!3m2!1sar!2s!4v1700000000000"
+                        width="100%" 
+                        height="300" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+
+            <div class="booking-links">
+                <h3>🔗 روابط مفيدة للحجز</h3>
+                <div class="links-grid">
+                    <a href="https://www.booking.com" target="_blank" rel="noopener noreferrer" class="booking-link">
+                        <span>🏨</span>
+                        <div>
+                            <h4>Booking.com</h4>
+                            <p>حجز الفنادق</p>
+                        </div>
+                    </a>
+                    <a href="https://www.skyscanner.com" target="_blank" rel="noopener noreferrer" class="booking-link">
+                        <span>✈️</span>
+                        <div>
+                            <h4>Skyscanner</h4>
+                            <p>حجز الطيران</p>
+                        </div>
+                    </a>
+                    <a href="https://www.tripadvisor.com" target="_blank" rel="noopener noreferrer" class="booking-link">
+                        <span>🎯</span>
+                        <div>
+                            <h4>TripAdvisor</h4>
+                            <p>الأنشطة والجولات</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Chefchaouen Details -->
+<section id="chefchaouen-details" class="city-details">
+    <div class="container">
+        <div class="details-header">
+            <h2>شفشاون - المدينة الزرقاء</h2>
+            <button class="close-btn" onclick="closeCityDetails()" aria-label="إغلاق التفاصيل">&times;</button>
+        </div>
+        
+        <div class="details-content">
+            <div class="details-grid">
+                <div class="details-text">
+                    <h3>🏛️ أهم المعالم السياحية</h3>
+                    <ul>
+                        <li><strong>المدينة العتيقة:</strong> شوارع وأزقة مطلية باللون الأزرق المميز</li>
+                        <li><strong>ساحة وطاء الحمام:</strong> قلب شفشاون النابض بالمقاهي والمطاعم التقليدية</li>
+                        <li><strong>القصبة:</strong> حصن تاريخي يضم متحف وحدائق</li>
+                        <li><strong>شلالات رأس الماء:</strong> منبع طبيعي خلاب على أطراف المدينة</li>
+                        <li><strong>جبل القلعة:</strong> منظر بانورامي رائع للمدينة والمحيط</li>
+                    </ul>
+
+                    <h3>🍽️ الأكل الشعبي</h3>
+                    <ul>
+                        <li><strong>الكسكس بالشعير:</strong> طبق محلي مميز أيام الجمعة</li>
+                        <li><strong>الحريرة:</strong> حساء غني بالمكونات</li>
+                        <li><strong>الطاجين بالخضار أو اللحم:</strong> وجبة مغربية تقليدية</li>
+                        <li><strong>الخبز التقليدي:</strong> يخبز في الأفران الطينية المحلية</li>
+                        <li><strong>الشاي بالنعناع:</strong> يقدم مع الحلويات المغربية</li>
+                    </ul>
+                </div>
+                
+                <div class="details-sidebar">
+                    <div class="weather-info">
+                        <h3>🌤️ الطقس</h3>
+                        <p>مناخ جبلي معتدل: صيف دافئ ومشمس، وشتاء بارد مع أمطار غزيرة أحيانًا.</p>
+                        <p><strong>أفضل أوقات الزيارة:</strong> أبريل-يونيو، سبتمبر-أكتوبر</p>
+                    </div>
+
+                    <div class="cost-info">
+                        <h3>💰 التكاليف التقديرية</h3>
+                        <ul>
+                            <li>الإقامة: 20-80$ في الليلة</li>
+                            <li>الطعام: 5-15$ للوجبة</li>
+                            <li>التنقل: 1-8$ للرحلة</li>
+                            <li>المعالم: غالبًا مجانية أو 1-5$ للدخول</li>
+                        </ul>
+                    </div>
+
+                    <div class="tips-info">
+                        <h3>💡 نصائح السفر</h3>
+                        <ul>
+                            <li>ارتدِ أحذية مريحة للمشي في الأزقة الجبلية</li>
+                            <li>أفضل وقت للتصوير هو الصباح الباكر أو قبل الغروب</li>
+                            <li>تذوق الخبز المحلي الطازج من الأفران التقليدية</li>
+                            <li>استعد لطقس بارد في المساء حتى في الصيف</li>
+                            <li>استكشف المناطق المحيطة مثل وادي لاو أو تطوان</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="map-section">
+                <h3>📍 الموقع على الخريطة</h3>
+                <div class="map-container">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3189.2025!2d-5.2681!3d35.1680!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd0b3fbb1e2a7a3b%3A0x7fdcbb5d75d2e4b!2sChefchaouen%2C%20Morocco!5e0!3m2!1sar!2s!4v1700000000000"
+                        width="100%" 
+                        height="300" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+
+  <!-- Fes Details -->
+<section id="fes-details" class="city-details">
+    <div class="container">
+        <div class="details-header">
+            <h2>فاس - العاصمة الثقافية القديمة</h2>
+            <button class="close-btn" onclick="closeCityDetails()" aria-label="إغلاق التفاصيل">&times;</button>
+        </div>
+        
+        <div class="details-content">
+            <div class="details-grid">
+                <div class="details-text">
+                    <h3>🏛️ أهم المعالم السياحية</h3>
+                    <ul>
+                        <li><strong>باب بوحلود:</strong> المدخل الأيقوني إلى فاس البالي.</li>
+                        <li><strong>فاس البالي:</strong> المدينة العتيقة القديمة؛ متاهة من الأزقة والأسواق التقليدية.</li>
+                        <li><strong>جامعة وقبة القرويين:</strong> واحدة من أقدم الجامعات في العالم.</li>
+                        <li><strong>مدرسة البو أنينيا:</strong> تحفة معمارية مارينية.</li>
+                        <li><strong>ورشات الدباغة (مثل شوارة):</strong> تجربة حرفية تقليدية لصناعة الجلود.</li>
+                    </ul>
+
+                    <h3>🍽️ الأكل الشعبي</h3>
+                    <ul>
+                        <li><strong>البسطيلة:</strong> فطيرة حلو-مالح تقليدية مصنوعة غالباً بالحمام أو الدجاج.</li>
+                        <li><strong>الحريرة:</strong> حساء مغربي غني يُقدَّم خاصة في المواسم الباردة.</li>
+                        <li><strong>الطاجين:</strong> أطباق مطبوخة ببطء بنكهات متنوعة.</li>
+                        <li><strong>المسمن أو البغرير:</strong> خبز تقليدي يُؤكل مع العسل أو الزبدة.</li>
+                        <li><strong>شاي بالنعناع:</strong> المشروب الترحيبي الوطني.</li>
+                    </ul>
+                </div>
+                
+                <div class="details-sidebar">
+                    <div class="weather-info">
+                        <h3>🌤️ الطقس</h3>
+                        <p>مناخ قاري متوسطي: صيف حار وجاف نسبيًا، وشتاء بارد مع أمطار خفيفة.</p>
+                        <p><strong>أفضل أوقات الزيارة:</strong> مارس-مايو، سبتمبر-نوفمبر</p>
+                    </div>
+
+                    <div class="cost-info">
+                        <h3>💰 التكاليف التقديرية</h3>
+                        <ul>
+                            <li>الإقامة: 25-120$ في الليلة</li>
+                            <li>الطعام: 5-25$ للوجبة</li>
+                            <li>التنقل: 1-10$ (طاكسي أو مشي)</li>
+                            <li>المعالم: كثير منها مجاني، وبعضها برسوم 2-15$.</li>
+                        </ul>
+                    </div>
+
+                    <div class="tips-info">
+                        <h3>💡 نصائح السفر</h3>
+                        <ul>
+                            <li>استعن بمرشد موثوق داخل فاس البالي لتجنب الضياع.</li>
+                            <li>تفاوض بهدوء في الأسواق، واطلب السعر أولاً.</li>
+                            <li>احترس عند تصوير ورشات الدباغة؛ يُتوقع أحيانًا إكراميات.</li>
+                            <li>ارتدِ ملابس محتشمة عند زيارة المواقع الدينية.</li>
+                            <li>احمل نقودًا صغيرة، فبعض الباعة لا يقبلون بطاقات.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="map-section">
+                <h3>📍 الموقع على الخريطة</h3>
+                <div class="map-container">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3305.111!2d-4.9826!3d34.0331!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd9f9b80b6d0e4b7%3A0x5b7d7e9f5d6d4c3!2sFes%2C%20Morocco!5e0!3m2!1sar!2s!4v1700000000000"
+                        width="100%" 
+                        height="300" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+
+            <div class="booking-links">
+                <h3>🔗 روابط مفيدة للحجز</h3>
+                <div class="links-grid">
+                    <a href="https://www.booking.com" target="_blank" rel="noopener noreferrer" class="booking-link">
+                        <span>🏨</span>
+                        <div>
+                            <h4>Booking.com</h4>
+                            <p>حجز الفنادق</p>
+                        </div>
+                    </a>
+                    <a href="https://www.skyscanner.com" target="_blank" rel="noopener noreferrer" class="booking-link">
+                        <span>✈️</span>
+                        <div>
+                            <h4>Skyscanner</h4>
+                            <p>حجز الطيران</p>
+                        </div>
+                    </a>
+                    <a href="https://www.tripadvisor.com" target="_blank" rel="noopener noreferrer" class="booking-link">
+                        <span>🎯</span>
+                        <div>
+                            <h4>TripAdvisor</h4>
+                            <p>الأنشطة والجولات</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+                      
+</body>
+</html>
+

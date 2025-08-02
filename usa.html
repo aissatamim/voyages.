@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>السياحة في الولايات المتحدة - عالم السياحة</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="country-styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <h1>🌍 عالم السياحة</h1>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html">الرئيسية</a></li>
+                    <li><a href="index.html#destinations">الوجهات</a></li>
+                    <li><a href="index.html#articles">المقالات</a></li>
+                    <li><a href="index.html#contact">اتصل بنا</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Country Hero -->
+    <section class="country-hero">
+        <div class="hero-image">
+            <img src="images/usa/usa_1.jpg" alt="الولايات المتحدة">
+            <div class="hero-overlay">
+                <div class="hero-content">
+                    <h1>🇺🇸 الولايات المتحدة</h1>
+                    <p>أرض الأحلام والفرص</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Country Info -->
+    <section class="country-info">
+        <div class="container">
+            <div class="info-grid">
+                <div class="info-text">
+                    <h2>اكتشف سحر أمريكا</h2>
+                    <p>الولايات المتحدة الأمريكية، أرض الأحلام والفرص اللامحدودة، تمتد عبر قارة كاملة وتضم تنوعاً مذهلاً من المناظر الطبيعية والثقافات. من ناطحات السحاب في نيويورك إلى شواطئ كاليفورنيا الذهبية، تقدم أمريكا تجارب لا تُنسى.</p>
+                    
+                    <div class="quick-facts">
+                        <div class="fact">
+                            <span class="fact-icon">🏛️</span>
+                            <div>
+                                <h4>العاصمة</h4>
+                                <p>واشنطن العاصمة</p>
+                            </div>
+                        </div>
+                        <div class="fact">
+                            <span class="fact-icon">💬</span>
+                            <div>
+                                <h4>اللغة</h4>
+                                <p>الإنجليزية</p>
+                            </div>
+                        </div>
+                        <div class="fact">
+                            <span class="fact-icon">💰</span>
+                            <div>
+                                <h4>العملة</h4>
+                                <p>الدولار الأمريكي</p>
+                            </div>
+                        </div>
+                        <div class="fact">
+                            <span class="fact-icon">🌡️</span>
+                            <div>
+                                <h4>أفضل وقت للزيارة</h4>
+                                <p>يختلف حسب المنطقة - عموماً الربيع والخريف</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="info-image">
+                    <img src="images/usa/usa_2.jpg" alt="معالم أمريكا">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cities Section -->
+    <section class="cities-section">
+        <div class="container">
+            <h2>أشهر المدن السياحية</h2>
+            <div class="cities-grid">
+                <div class="city-card" onclick="openCityDetails('newyork')">
+                    <img src="images/usa/usa_3.jpg" alt="نيويورك">
+                    <div class="city-content">
+                        <h3>نيويورك</h3>
+                        <p>المدينة التي لا تنام</p>
+                        <span class="explore-btn">استكشف المدينة</span>
+                    </div>
+                </div>
+
+                <div class="city-card" onclick="openCityDetails('losangeles')">
+                    <img src="images/usa/usa_4.jpg" alt="لوس أنجلوس">
+                    <div class="city-content">
+                        <h3>لوس أنجلوس</h3>
+                        <p>مدينة الملائكة وهوليوود</p>
+                        <span class="explore-btn">استكشف المدينة</span>
+                    </div>
+                </div>
+
+                <div class="city-card" onclick="openCityDetails('sanfrancisco')">
+                    <img src="images/usa/usa_5.jpg" alt="سان فرانسيسكو">
+                    <div class="city-content">
+                        <h3>سان فرانسيسكو</h3>
+                        <p>مدينة الجسر الذهبي</p>
+                        <span class="explore-btn">استكشف المدينة</span>
+                    </div>
+                </div>
+
+                <div class="city-card" onclick="openCityDetails('lasvegas')">
+                    <img src="images/usa/usa_6.jpg" alt="لاس فيغاس">
+                    <div class="city-content">
+                        <h3>لاس فيغاس</h3>
+                        <p>مدينة الأضواء والترفيه</p>
+                        <span class="explore-btn">استكشف المدينة</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- New York Details -->
+    <section id="newyork-details" class="city-details">
+        <div class="container">
+            <div class="details-header">
+                <h2>نيويورك - المدينة التي لا تنام</h2>
+                <button class="close-btn" onclick="closeCityDetails()">&times;</button>
+            </div>
+            
+            <div class="details-content">
+                <div class="details-grid">
+                    <div class="details-text">
+                        <h3>🏛️ أهم المعالم السياحية</h3>
+                        <ul>
+                            <li><strong>تمثال الحرية:</strong> رمز الحرية والديمقراطية الأمريكية</li>
+                            <li><strong>تايمز سكوير:</strong> قلب نيويورك النابض بالحياة</li>
+                            <li><strong>سنترال بارك:</strong> واحة خضراء في قلب المدينة</li>
+                            <li><strong>جسر بروكلين:</strong> أحد أشهر الجسور في العالم</li>
+                            <li><strong>مبنى إمباير ستيت:</strong> ناطحة سحاب أيقونية</li>
+                        </ul>
+
+                        <h3>🍽️ الأكل الشعبي</h3>
+                        <ul>
+                            <li><strong>البيتزا النيويوركية:</strong> شرائح البيتزا الكبيرة والرقيقة</li>
+                            <li><strong>الهوت دوغ:</strong> من عربات الطعام في الشوارع</li>
+                            <li><strong>الباغل:</strong> خبز دائري مع الكريم تشيز</li>
+                            <li><strong>الديلي ساندويش:</strong> ساندويشات اللحوم المتنوعة</li>
+                            <li><strong>الشيز كيك:</strong> كعكة الجبن النيويوركية الشهيرة</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="details-sidebar">
+                        <div class="weather-info">
+                            <h3>🌤️ الطقس</h3>
+                            <p>مناخ قاري رطب. الصيف حار ورطب، الشتاء بارد مع تساقط الثلوج أحياناً.</p>
+                            <p><strong>أفضل أوقات الزيارة:</strong> أبريل-يونيو، سبتمبر-نوفمبر</p>
+                        </div>
+
+                        <div class="cost-info">
+                            <h3>💰 التكاليف التقديرية</h3>
+                            <ul>
+                                <li>الإقامة: 100-500$ في الليلة</li>
+                                <li>الطعام: 15-80$ للوجبة</li>
+                                <li>التنقل: 2.90$ للرحلة</li>
+                                <li>المعالم: 15-50$ للدخول</li>
+                            </ul>
+                        </div>
+
+                        <div class="tips-info">
+                            <h3>💡 نصائح السفر</h3>
+                            <ul>
+                                <li>استخدم مترو الأنفاق للتنقل</li>
+                                <li>احجز المطاعم والعروض مسبقاً</li>
+                                <li>امشِ كثيراً - المدينة مناسبة للمشي</li>
+                                <li>احذر من الازدحام في ساعات الذروة</li>
+                                <li>اترك إكرامية 18-20% في المطاعم</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="map-section">
+                    <h3>📍 الموقع على الخريطة</h3>
+                    <div class="map-container">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.2412!2d-73.9875!3d40.7589!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2s!4v1234567890"
+                            width="100%" 
+                            height="300" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy">
+                        </iframe>
+                    </div>
+                </div>
+
+                <div class="booking-links">
+                    <h3>🔗 روابط مفيدة للحجز</h3>
+                    <div class="links-grid">
+                        <a href="https://www.booking.com" target="_blank" class="booking-link">
+                            <span>🏨</span>
+                            <div>
+                                <h4>Booking.com</h4>
+                                <p>حجز الفنادق</p>
+                            </div>
+                        </a>
+                        <a href="https://www.skyscanner.com" target="_blank" class="booking-link">
+                            <span>✈️</span>
+                            <div>
+                                <h4>Skyscanner</h4>
+                                <p>حجز الطيران</p>
+                            </div>
+                        </a>
+                        <a href="https://www.tripadvisor.com" target="_blank" class="booking-link">
+                            <span>🎯</span>
+                            <div>
+                                <h4>TripAdvisor</h4>
+                                <p>الأنشطة والجولات</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- Los Angeles Details -->
+<section id="losangeles-details" class="city-details">
+    <div class="container">
+        <div class="details-header">
+            <h2>لوس أنجلوس - مدينة النجوم والتنوع الثقافي</h2>
+            <button class="close-btn" onclick="closeCityDetails()" aria-label="إغلاق التفاصيل">&times;</button>
+        </div>
+
+        <div class="details-content">
+            <div class="details-grid">
+                <div class="details-text">
+                    <h3>🎬 أهم المعالم السياحية</h3>
+                    <ul>
+                        <li><strong>هوليوود:</strong> ممشى الشهرة، استوديوهات الأفلام، ومسرح TCL الصيني.</li>
+                        <li><strong>مرصد جريفيث:</strong> إطلالة بانورامية على المدينة وهوليوود ساين.</li>
+                        <li><strong>شاطئ سانتا مونيكا:</strong> رصيف شهير، ألعاب، وممرات للدراجات.</li>
+                        <li><strong>متحف جيتي:</strong> فنون كلاسيكية وحدائق خلابة.</li>
+                        <li><strong>استوديوهات يونيفرسال:</strong> مدينة ملاهٍ وجولات سينمائية.</li>
+                        <li><strong>حي فينيس:</strong> قنوات مائية، فنون الشارع، ومتاجر فريدة.</li>
+                    </ul>
+
+                    <h3>🍔 الأكل الشعبي</h3>
+                    <ul>
+                        <li><strong>تاكو الشوارع:</strong> من شاحنات الطعام المنتشرة في كل حي.</li>
+                        <li><strong>In-N-Out Burger:</strong> سلسلة شهيرة تقدم البرغر الكلاسيكي.</li>
+                        <li><strong>سوشي كاليفورنيا رول:</strong> ابتكار محلي أصبح عالميًا.</li>
+                        <li><strong>فود بولز نباتية:</strong> أطباق صحية من ثقافة كاليفورنيا الحديثة.</li>
+                    </ul>
+                </div>
+
+                <div class="details-sidebar">
+                    <div class="weather-info">
+                        <h3>🌤️ الطقس</h3>
+                        <p>مناخ متوسطي: شتاء معتدل، صيف مشمس. مثالي للزيارة طوال العام.</p>
+                    </div>
+
+                    <div class="cost-info">
+                        <h3>💰 التكاليف التقديرية</h3>
+                        <ul>
+                            <li>الإقامة: 100–300$ في الليلة</li>
+                            <li>الطعام: 15–60$ للوجبة</li>
+                            <li>المواصلات: 1.75$ للرحلة (مترو/حافلة)</li>
+                            <li>المعالم: 20–100$ حسب النشاط</li>
+                        </ul>
+                    </div>
+
+                    <div class="tips-info">
+                        <h3>💡 نصائح السفر</h3>
+                        <ul>
+                            <li>استخدم تطبيقات التنقل لتجنب الزحام المروري.</li>
+                            <li>استكشف الأحياء المتنوعة مثل كورياتاون، ليتل طوكيو، وبيفرلي هيلز.</li>
+                            <li>احجز تذاكر استوديوهات يونيفرسال وهوليوود مسبقًا.</li>
+                            <li>جرب المشي أو ركوب الدراجة على طريق باسيفيك كوست السريع.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="map-section">
+                <h3>📍 الموقع على الخريطة</h3>
+                <div class="map-container">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3303.999999!2d-118.2437!3d34.0522!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c7c9e5e0f%3A0xabcdef1234567890!2sLos%20Angeles%2C%20CA!5e0!3m2!1sar!2s!4v1700000000000"
+                        width="100%" 
+                        height="300" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+
+            <div class="booking-links">
+                <h3>🔗 روابط مفيدة للحجز</h3>
+                <div class="links-grid">
+                    <a href="https://www.booking.com" target="_blank" rel="noopener noreferrer" class="booking-link">
+                        <span>🏨</span>
+                        <div>
+                            <h4>Booking.com</h4>
+                            <p>فنادق ومنتجعات في لوس أنجلوس</p>
+                        </div>
+                    </a>
+                    <a href="https://www.skyscanner.com" target="_blank" rel="noopener noreferrer" class="booking-link">
+                        <span>✈️</span>
+                        <div>
+                            <h4>Skyscanner</h4>
+                            <p>رحلات إلى مطار لوس أنجلوس الدولي (LAX)</p>
+                        </div>
+                    </a>
+                    <a href="https://ar.tripadvisor.com/Tourism-g32655-Los_Angeles_California-Vacations.html" target="_blank" rel="noopener noreferrer" class="booking-link">
+                        <span>🎯</span>
+                        <div>
+                            <h4>TripAdvisor</h4>
+                            <p>أنشطة، تقييمات، مطاعم</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- San Francisco Details -->
+<section id="sanfrancisco-details" class="city-details">
+    <div class="container">
+        <div class="details-header">
+            <h2>سان فرانسيسكو - جوهرة شمال كاليفورنيا</h2>
+            <button class="close-btn" onclick="closeCityDetails()" aria-label="إغلاق التفاصيل">&times;</button>
+        </div>
+
+        <div class="details-content">
+            <div class="details-grid">
+                <div class="details-text">
+                    <h3>🌉 أهم المعالم السياحية</h3>
+                    <ul>
+                        <li><strong>جسر البوابة الذهبية (Golden Gate Bridge):</strong> أحد أشهر الجسور في العالم، بإطلالة ساحرة على الخليج.</li>
+                        <li><strong>جزيرة ألكاتراز:</strong> سجن تاريخي يقع وسط الخليج، يمكن زيارته بالقارب.</li>
+                        <li><strong>الحي الصيني:</strong> أكبر حي صيني خارج آسيا، مليء بالمطاعم والأسواق.</li>
+                        <li><strong>التلفريك التاريخي:</strong> وسيلة نقل كلاسيكية تصعد التلال الحادة.</li>
+                        <li><strong>حديقة غولدن غيت:</strong> أكبر من سنترال بارك، تضم متاحف وحدائق نباتية.</li>
+                        <li><strong>توأم القمم (Twin Peaks):</strong> أعلى نقطتين توفران إطلالة بانورامية على المدينة.</li>
+                    </ul>
+
+                    <h3>🍽️ الأكل الشعبي</h3>
+                    <ul>
+                        <li><strong>Clam Chowder:</strong> حساء المحار يُقدم داخل رغيف خبز دائري.</li>
+                        <li><strong>Mission Burrito:</strong> بوريتو ضخم من الحي اللاتيني.</li>
+                        <li><strong>Dim Sum:</strong> مأكولات صينية صغيرة من الحي الصيني.</li>
+                        <li><strong>Sourdough Bread:</strong> خبز مخمر محلي بنكهة مميزة.</li>
+                    </ul>
+                </div>
+
+                <div class="details-sidebar">
+                    <div class="weather-info">
+                        <h3>🌤️ الطقس</h3>
+                        <p>مناخ متوسطي معتدل: صيف بارد وضبابي، شتاء رطب. أفضل وقت للزيارة: سبتمبر إلى نوفمبر.</p>
+                    </div>
+
+                    <div class="cost-info">
+                        <h3>💰 التكاليف التقديرية</h3>
+                        <ul>
+                            <li>الإقامة: 120–350$ في الليلة</li>
+                            <li>الطعام: 20–70$ للوجبة</li>
+                            <li>المواصلات: 2.5$ للرحلة (مترو/حافلة/تلفريك)</li>
+                            <li>المعالم: 15–40$ حسب النشاط</li>
+                        </ul>
+                    </div>
+
+                    <div class="tips-info">
+                        <h3>💡 نصائح السفر</h3>
+                        <ul>
+                            <li>ارتدِ طبقات من الملابس لتقلبات الطقس المفاجئة.</li>
+                            <li>احجز جولة إلى جزيرة ألكاتراز مسبقًا.</li>
+                            <li>استخدم بطاقة MUNI للتنقل داخل المدينة.</li>
+                            <li>استمتع بالمشي في أحياء مثل Haight-Ashbury وCastro وNob Hill.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="map-section">
+                <h3>📍 الموقع على الخريطة</h3>
+                <div class="map-container">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.999999!2d-122.4194!3d37.7749!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085809e5e0f%3A0xabcdef1234567890!2sSan%20Francisco%2C%20CA!5e0!3m2!1sar!2s!4v1700000000000"
+                        width="100%" 
+                        height="300" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+
+            <div class="booking-links">
+                <h3>🔗 روابط مفيدة للحجز</h3>
+                <div class="links-grid">
+                    <a href="https://www.booking.com" target="_blank" rel="noopener noreferrer" class="booking-link">
+                        <span>🏨</span>
+                        <div>
+                            <h4>Booking.com</h4>
+                            <p>فنادق في سان فرانسيسكو</p>
+                        </div>
+                    </a>
+                    <a href="https://www.skyscanner.com" target="_blank" rel="noopener noreferrer" class="booking-link">
+                        <span>✈️</span>
+                        <div>
+                            <h4>Skyscanner</h4>
+                            <p>رحلات إلى مطار سان فرانسيسكو الدولي (SFO)</p>
+                        </div>
+                    </a>
+                    <a href="https://ar.tripadvisor.com/Tourism-g60713-San_Francisco_California-Vacations.html" target="_blank" rel="noopener noreferrer" class="booking-link">
+                        <span>🎯</span>
+                        <div>
+                            <h4>TripAdvisor</h4>
+                            <p>أنشطة، تقييمات، مطاعم</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Las Vegas Details -->
+<section id="lasvegas-details" class="city-details">
+    <div class="container">
+        <div class="details-header">
+            <h2>لاس فيغاس - مدينة الأضواء والمرح اللامحدود</h2>
+            <button class="close-btn" onclick="closeCityDetails()" aria-label="إغلاق التفاصيل">&times;</button>
+        </div>
+
+        <div class="details-content">
+            <div class="details-grid">
+                <div class="details-text">
+                    <h3>🎰 أهم المعالم السياحية</h3>
+                    <ul>
+                        <li><strong>شارع لاس فيغاس ستريب:</strong> قلب المدينة، يضم أشهر الفنادق والكازينوهات والعروض.</li>
+                        <li><strong>نافورة بيلاجيو:</strong> عرض مائي موسيقي ساحر أمام فندق بيلاجيو.</li>
+                        <li><strong>عجلة هاي رولر:</strong> أكبر عجلة دوارة في العالم، توفر إطلالة بانورامية.</li>
+                        <li><strong>متحف النيون:</strong> يعرض تاريخ المدينة من خلال لوحاتها المضيئة القديمة.</li>
+                        <li><strong>شارع فريمونت:</strong> منطقة تاريخية مليئة بالعروض الحية والأضواء.</li>
+                        <li><strong>متحف المافيا:</strong> يكشف عن تاريخ الجريمة المنظمة في أمريكا.</li>
+                    </ul>
+
+                    <h3>🍽️ الأكل الشعبي</h3>
+                    <ul>
+                        <li><strong>بوفيهات الفنادق:</strong> تجربة طعام فاخرة ومتنوعة في فنادق مثل Caesars وWynn.</li>
+                        <li><strong>Steakhouse كلاسيكي:</strong> شرائح لحم أمريكية فاخرة.</li>
+                        <li><strong>تاكو الشوارع:</strong> مأكولات مكسيكية من شاحنات الطعام.</li>
+                        <li><strong>Eggslut:</strong> مطعم شهير يقدم وجبات إفطار مبتكرة.</li>
+                    </ul>
+                </div>
+
+                <div class="details-sidebar">
+                    <div class="weather-info">
+                        <h3>☀️ الطقس</h3>
+                        <p>مناخ صحراوي: صيف شديد الحرارة، شتاء معتدل. أفضل وقت للزيارة: مارس–مايو، أكتوبر–نوفمبر.</p>
+                    </div>
+
+                    <div class="cost-info">
+                        <h3>💰 التكاليف التقديرية</h3>
+                        <ul>
+                            <li>الإقامة: 80–400$ في الليلة</li>
+                            <li>الطعام: 15–100$ للوجبة</li>
+                            <li>العروض والأنشطة: 30–150$ حسب العرض</li>
+                            <li>المواصلات: 6$ لتذكرة يومية للمونوريل</li>
+                        </ul>
+                    </div>
+
+                    <div class="tips-info">
+                        <h3>💡 نصائح السفر</h3>
+                        <ul>
+                            <li>احجز العروض المسرحية مسبقًا، خاصة عروض Cirque du Soleil.</li>
+                            <li>استخدم تطبيقات مشاركة الركوب لتوفير الوقت والمال.</li>
+                            <li>لا تنسَ شرب الماء بكثرة بسبب الجفاف الصحراوي.</li>
+                            <li>استكشف ما وراء الكازينوهات: المتاحف، الفنون، والطبيعة المحيطة.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="map-section">
+                <h3>📍 الموقع على الخريطة</h3>
+                <div class="map-container">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3303.999999!2d-115.1398!3d36.1699!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c8c4c9e5e0f%3A0xabcdef1234567890!2sLas%20Vegas%2C%20NV!5e0!3m2!1sar!2s!4v1700000000000"
+                        width="100%" 
+                        height="300" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+
+            <div class="booking-links">
+                <h3>🔗 روابط مفيدة للحجز</h3>
+                <div class="links-grid">
+                    <a href="https://www.booking.com" target="_blank" rel="noopener noreferrer" class="booking-link">
+                        <span>🏨</span>
+                        <div>
+                            <h4>Booking.com</h4>
+                            <p>فنادق وكازينوهات في لاس فيغاس</p>
+                        </div>
+                    </a>
+                    <a href="https://www.skyscanner.com" target="_blank" rel="noopener noreferrer" class="booking-link">
+                        <span>✈️</span>
+                        <div>
+                            <h4>Skyscanner</h4>
+                            <p>رحلات إلى مطار لاس فيغاس الدولي (LAS)</p>
+                        </div>
+                    </a>
+                    <a href="https://ar.tripadvisor.com/Tourism-g45963-Las_Vegas_Nevada-Vacations.html" target="_blank" rel="noopener noreferrer" class="booking-link">
+                        <span>🎯</span>
+                        <div>
+                            <h4>TripAdvisor</h4>
+                            <p>أنشطة، تقييمات، عروض مسرحية</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    <!-- Photo Gallery -->
+    <section class="photo-gallery">
+        <div class="container">
+            <h2>معرض الصور</h2>
+            <div class="gallery-grid">
+                <img src="images/usa/usa_1.jpg" alt="أمريكا 1" onclick="openLightbox(this)">
+                <img src="images/usa/usa_2.jpg" alt="أمريكا 2" onclick="openLightbox(this)">
+                <img src="images/usa/usa_3.jpg" alt="أمريكا 3" onclick="openLightbox(this)">
+                <img src="images/usa/usa_4.jpg" alt="أمريكا 4" onclick="openLightbox(this)">
+                <img src="images/usa/usa_5.jpg" alt="أمريكا 5" onclick="openLightbox(this)">
+                <img src="images/usa/usa_6.jpg" alt="أمريكا 6" onclick="openLightbox(this)">
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox -->
+    <div id="lightbox" class="lightbox">
+        <span class="close-lightbox" onclick="closeLightbox()">&times;</span>
+        <img id="lightbox-img" src="" alt="">
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>عالم السياحة</h3>
+                    <p>دليلك الشامل لاستكشاف أجمل الوجهات السياحية في العالم</p>
+                </div>
+                <div class="footer-section">
+                    <h4>روابط سريعة</h4>
+                    <ul>
+                        <li><a href="index.html">الرئيسية</a></li>
+                        <li><a href="index.html#destinations">الوجهات</a></li>
+                        <li><a href="index.html#articles">المقالات</a></li>
+                        <li><a href="index.html#contact">اتصل بنا</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>الوجهات الشائعة</h4>
+                    <ul>
+                        <li><a href="morocco.html">المغرب</a></li>
+                        <li><a href="france.html">فرنسا</a></li>
+                        <li><a href="turkey.html">تركيا</a></li>
+                        <li><a href="japan.html">اليابان</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 عالم السياحة. جميع الحقوق محفوظة.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="country-script.js"></script>
+</body>
+</html>
+

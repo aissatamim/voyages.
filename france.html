@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>السياحة في فرنسا - عالم السياحة</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="country-styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <h1>🌍 عالم السياحة</h1>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html">الرئيسية</a></li>
+                    <li><a href="index.html#destinations">الوجهات</a></li>
+                    <li><a href="index.html#articles">المقالات</a></li>
+                    <li><a href="index.html#contact">اتصل بنا</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Country Hero -->
+    <section class="country-hero">
+        <div class="hero-image">
+            <img src="images/france/france_1.jpg" alt="فرنسا">
+            <div class="hero-overlay">
+                <div class="hero-content">
+                    <h1>🇫🇷 فرنسا</h1>
+                    <p>مدينة النور والرومانسية</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Country Info -->
+    <section class="country-info">
+        <div class="container">
+            <div class="info-grid">
+                <div class="info-text">
+                    <h2>اكتشف سحر فرنسا</h2>
+                    <p>فرنسا، بلد الفن والثقافة والرومانسية، تقع في غرب أوروبا وتشتهر بمعالمها الأيقونية، مطبخها الراقي، وتاريخها العريق. من برج إيفل في باريس إلى شواطئ الريفيرا الفرنسية، تقدم فرنسا تجارب لا تُنسى لكل زائر.</p>
+                    
+                    <div class="quick-facts">
+                        <div class="fact">
+                            <span class="fact-icon">🏛️</span>
+                            <div>
+                                <h4>العاصمة</h4>
+                                <p>باريس</p>
+                            </div>
+                        </div>
+                        <div class="fact">
+                            <span class="fact-icon">💬</span>
+                            <div>
+                                <h4>اللغة</h4>
+                                <p>الفرنسية</p>
+                            </div>
+                        </div>
+                        <div class="fact">
+                            <span class="fact-icon">💰</span>
+                            <div>
+                                <h4>العملة</h4>
+                                <p>اليورو</p>
+                            </div>
+                        </div>
+                        <div class="fact">
+                            <span class="fact-icon">🌡️</span>
+                            <div>
+                                <h4>أفضل وقت للزيارة</h4>
+                                <p>أبريل - يونيو، سبتمبر - أكتوبر</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="info-image">
+                    <img src="images/france/france_2.jpg" alt="معالم فرنسا">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cities Section -->
+    <section class="cities-section">
+        <div class="container">
+            <h2>أشهر المدن السياحية</h2>
+            <div class="cities-grid">
+                <div class="city-card" onclick="openCityDetails('paris')">
+                    <img src="images/france/france_3.jpg" alt="باريس">
+                    <div class="city-content">
+                        <h3>باريس</h3>
+                        <p>مدينة النور وعاصمة الرومانسية</p>
+                        <span class="explore-btn">استكشف المدينة</span>
+                    </div>
+                </div>
+
+                <div class="city-card" onclick="openCityDetails('nice')">
+                    <img src="images/france/france_4.jpg" alt="نيس">
+                    <div class="city-content">
+                        <h3>نيس</h3>
+                        <p>جوهرة الريفيرا الفرنسية</p>
+                        <span class="explore-btn">استكشف المدينة</span>
+                    </div>
+                </div>
+
+                <div class="city-card" onclick="openCityDetails('lyon')">
+                    <img src="images/france/france_5.jpg" alt="ليون">
+                    <div class="city-content">
+                        <h3>ليون</h3>
+                        <p>عاصمة فن الطبخ الفرنسي</p>
+                        <span class="explore-btn">استكشف المدينة</span>
+                    </div>
+                </div>
+
+                <div class="city-card" onclick="openCityDetails('marseille')">
+                    <img src="images/france/france_6.jpg" alt="مرسيليا">
+                    <div class="city-content">
+                        <h3>مرسيليا</h3>
+                        <p>أقدم مدينة في فرنسا</p>
+                        <span class="explore-btn">استكشف المدينة</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Paris Details -->
+    <section id="paris-details" class="city-details">
+        <div class="container">
+            <div class="details-header">
+                <h2>باريس - مدينة النور</h2>
+                <button class="close-btn" onclick="closeCityDetails()">&times;</button>
+            </div>
+            
+            <div class="details-content">
+                <div class="details-grid">
+                    <div class="details-text">
+                        <h3>🏛️ أهم المعالم السياحية</h3>
+                        <ul>
+                            <li><strong>برج إيفل:</strong> الرمز الأكثر شهرة لباريس ولفرنسا</li>
+                            <li><strong>متحف اللوفر:</strong> أحد أكبر وأشهر المتاحف الفنية في العالم</li>
+                            <li><strong>كاتدرائية نوتردام:</strong> تحفة معمارية قوطية تاريخية</li>
+                            <li><strong>قوس النصر:</strong> معلم تاريخي في نهاية شارع الشانزليزيه</li>
+                            <li><strong>حدائق لوكسمبورغ:</strong> حدائق جميلة وهادئة للاسترخاء</li>
+                        </ul>
+
+                        <h3>🍽️ الأكل الشعبي</h3>
+                        <ul>
+                            <li><strong>الكرواسون:</strong> معجنات فرنسية شهيرة للإفطار</li>
+                            <li><strong>الباغيت:</strong> الخبز الفرنسي التقليدي</li>
+                            <li><strong>الماكرون:</strong> حلويات فرنسية ملونة وشهية</li>
+                            <li><strong>الكريب:</strong> فطائر رقيقة حلوة أو مالحة</li>
+                            <li><strong>الجبن والنبيذ:</strong> تنوع رائع من الأجبان والنبيذ الفاخر</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="details-sidebar">
+                        <div class="weather-info">
+                            <h3>🌤️ الطقس</h3>
+                            <p>مناخ معتدل. الصيف دافئ وممتع، الشتاء بارد مع احتمالية تساقط الثلوج.</p>
+                            <p><strong>أفضل أوقات الزيارة:</strong> أبريل-يونيو، سبتمبر-أكتوبر</p>
+                        </div>
+
+                        <div class="cost-info">
+                            <h3>💰 التكاليف التقديرية</h3>
+                            <ul>
+                                <li>الإقامة: 80-300€ في الليلة</li>
+                                <li>الطعام: 15-50€ للوجبة</li>
+                                <li>التنقل: 1.90€ للرحلة</li>
+                                <li>المعالم: 10-25€ للدخول</li>
+                            </ul>
+                        </div>
+
+                        <div class="tips-info">
+                            <h3>💡 نصائح السفر</h3>
+                            <ul>
+                                <li>احجز تذاكر المعالم مسبقاً</li>
+                                <li>استخدم وسائل النقل العام</li>
+                                <li>احذر من النشالين في المناطق المزدحمة</li>
+                                <li>تعلم بعض العبارات الفرنسية الأساسية</li>
+                                <li>استمتع بثقافة المقاهي الباريسية</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="map-section">
+                    <h3>📍 الموقع على الخريطة</h3>
+                    <div class="map-container">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.9916256937595!2d2.2922926156743716!3d48.85837007928746!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e1f06e2b70f%3A0x40b82c3688c9460!2sParis%2C%20France!5e0!3m2!1sen!2s!4v1234567890"
+                            width="100%" 
+                            height="300" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy">
+                        </iframe>
+                    </div>
+                </div>
+
+                <div class="booking-links">
+                    <h3>🔗 روابط مفيدة للحجز</h3>
+                    <div class="links-grid">
+                        <a href="https://www.booking.com" target="_blank" class="booking-link">
+                            <span>🏨</span>
+                            <div>
+                                <h4>Booking.com</h4>
+                                <p>حجز الفنادق</p>
+                            </div>
+                        </a>
+                        <a href="https://www.skyscanner.com" target="_blank" class="booking-link">
+                            <span>✈️</span>
+                            <div>
+                                <h4>Skyscanner</h4>
+                                <p>حجز الطيران</p>
+                            </div>
+                        </a>
+                        <a href="https://www.tripadvisor.com" target="_blank" class="booking-link">
+                            <span>🎯</span>
+                            <div>
+                                <h4>TripAdvisor</h4>
+                                <p>الأنشطة والجولات</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- Marseille Details -->
+<section id="marseille-details" class="city-details">
+    <div class="container">
+        <div class="details-header">
+            <h2>مرسيليا - بوابة البحر المتوسط</h2>
+            <button class="close-btn" onclick="closeCityDetails()" aria-label="إغلاق التفاصيل">&times;</button>
+        </div>
+        
+        <div class="details-content">
+            <div class="details-grid">
+                <div class="details-text">
+                    <h3>🏛️ أهم المعالم السياحية</h3>
+                    <ul>
+                        <li><strong>الميناء القديم (Vieux-Port):</strong> قلب مرسيليا النابض، مكان رائع للتجول ومشاهدة القوارب.</li>
+                        <li><strong>بازيليك نوتردام دي لا غارد:</strong> كنيسة على التل تطل على المدينة وتوفر مناظر بانورامية.</li>
+                        <li><strong>لو بانييه (Le Panier):</strong> أقدم حي في مرسيليا بأزقته الملونة وفنه الشعبي.</li>
+                        <li><strong>ميوسيم (MuCEM):</strong> متحف حضارة أوروبا والبحر المتوسط بتصميم معماري حديث.</li>
+                        <li><strong>قلعة إيف (Château d'If):</strong> جزيرة-قلعة شهيرة ظهرت في رواية "كونت مونت كريستو".</li>
+                    </ul>
+
+                    <h3>🍽️ الأكل الشعبي</h3>
+                    <ul>
+                        <li><strong>بويابيس (Bouillabaisse):</strong> حساء سمك تقليدي غني من البحر المتوسط.</li>
+                        <li><strong>باستيس (Pastis):</strong> مشروب أنيس مميز يُشرب كمقبلات.</li>
+                        <li><strong>سوقا (Socca):</strong> فطيرة مصنوعة من دقيق الحمص، شعبية في جنوب فرنسا.</li>
+                        <li><strong>بانيز (Panisse):</strong> مقبلات مصنوعة من دقيق الحمص المقلية.</li>
+                        <li><strong>تابيناد (Tapenade):</strong> معجون زيتون مع الأنشوجة أو الكابر، يقدم مع خبز.</li>
+                    </ul>
+                </div>
+                
+                <div class="details-sidebar">
+                    <div class="weather-info">
+                        <h3>🌤️ الطقس</h3>
+                        <p>مناخ متوسطي: صيف حار وجاف، وشتاء معتدل مع أمطار خفيفة أحيانًا.</p>
+                        <p><strong>أفضل أوقات الزيارة:</strong> مايو-يونيو، سبتمبر-أكتوبر</p>
+                    </div>
+
+                    <div class="cost-info">
+                        <h3>💰 التكاليف التقديرية</h3>
+                        <ul>
+                            <li>الإقامة: 70-200€ في الليلة</li>
+                            <li>الطعام: 15-45€ للوجبة</li>
+                            <li>التنقل: 1.90€ للرحلة (ميترو/ترام)</li>
+                            <li>المعالم: 5-20€ للدخول حسب المكان</li>
+                        </ul>
+                    </div>
+
+                    <div class="tips-info">
+                        <h3>💡 نصائح السفر</h3>
+                        <ul>
+                            <li>تجوّل في الميناء القديم صباحًا لتفادي الزحمة.</li>
+                            <li>اصعد إلى نوتردام دي لا غارد لمشهد غروب مميز.</li>
+                            <li>جرب البويابيس في مطعم معتمد—اسأل السكان المحليين عن التوصيات.</li>
+                            <li>احذر من النشالين في المناطق السياحية المزدحمة.</li>
+                            <li>استخدم الترام والميترو للتنقل السريع والموثوق.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="map-section">
+                <h3>📍 الموقع على الخريطة</h3>
+                <div class="map-container">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3350.1234567890123!2d5.3698!3d43.2965!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12c9c0c1b3f4d5e7%3A0xabcdef1234567890!2sMarseille%2C%20France!5e0!3m2!1sen!2s!4v1700000000000"
+                        width="100%" 
+                        height="300" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+
+            <div class="booking-links">
+                <h3>🔗 روابط مفيدة للحجز</h3>
+                <div class="links-grid">
+                    <a href="https://www.booking.com" target="_blank" rel="noopener noreferrer" class="booking-link">
+                        <span>🏨</span>
+                        <div>
+                            <h4>Booking.com</h4>
+                            <p>حجز الفنادق</p>
+                        </div>
+                    </a>
+                    <a href="https://www.skyscanner.com" target="_blank" rel="noopener noreferrer" class="booking-link">
+                        <span>✈️</span>
+                        <div>
+                            <h4>Skyscanner</h4>
+                            <p>حجز الطيران</p>
+                        </div>
+                    </a>
+                    <a href="https://www.tripadvisor.com" target="_blank" rel="noopener noreferrer" class="booking-link">
+                        <span>🎯</span>
+                        <div>
+                            <h4>TripAdvisor</h4>
+                            <p>الأنشطة والجولات</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Nice Details -->
+<section id="nice-details" class="city-details">
+    <div class="container">
+        <div class="details-header">
+            <h2>نيس - لؤلؤة الريفييرا</h2>
+            <button class="close-btn" onclick="closeCityDetails()" aria-label="إغلاق التفاصيل">&times;</button>
+        </div>
+        
+        <div class="details-content">
+            <div class="details-grid">
+                <div class="details-text">
+                    <h3>🏛️ أهم المعالم السياحية</h3>
+                    <ul>
+                        <li><strong>بروميناد ديزانغليه (Promenade des Anglais):</strong> ممشى شهير على البحر المتوسط مع مناظر ساحرة. </li>
+                        <li><strong>فيفو نيس (Vieux Nice):</strong> المدينة القديمة الملونة بأزقتها الضيقة وسوق <em>Cours Saleya</em>. </li>
+                        <li><strong>تل القلعة (Castle Hill / Colline du Château):</strong> حديقة مرتفعة تُوفر إطلالات بانورامية على نيس والخليج. </li>
+                        <li><strong>متحف ماتيس (Musée Matisse):</strong> مكرّس لأعمال الفنان هنري ماتيس في حي كيميز التاريخي.</li>
+                        <li><strong>سوق كُور سالايا (Cours Saleya):</strong> سوق نابض بالحياة للمنتجات المحلية والزهور والمأكولات. </li>
+                    </ul>
+
+                    <h3>🍽️ الأكل الشعبي</h3>
+                    <ul>
+                        <li><strong>سوكّا (Socca):</strong> فطيرة مصنوعة من دقيق الحمص، تُؤكل في الشوارع كوجبة خفيفة.</li>
+                        <li><strong>سلاد نيسواز (Salade Niçoise):</strong> سلطة متوسّطية تتكون من خضار طازجة، بيض، وأنشوجة أو تونة. </li>
+                        <li><strong>بَان باغنات (Pan Bagnat):</strong> ساندويش يُحاكي سلطة نيسواز محشوة داخل خبز مع زيت زيتون. </li>
+                        <li><strong>بيسالاديير (Pissaladière):</strong> فطيرة مع بصل، أنشوجة وزيتون، شبيهة بالبيتزا المحلية.</li>
+                        <li><strong>راتاتوي (Ratatouille):</strong> مزيج خضار محلي مطبوخ على الطريقة البروڤنسالية.</li>
+                    </ul>
+                </div>
+                
+                <div class="details-sidebar">
+                    <div class="weather-info">
+                        <h3>🌤️ الطقس</h3>
+                        <p>مناخ متوسطي: صيف دافئ وجاف، وشتاء معتدل مع أمطار خفيفة أحيانًا. أفضل الأوقات للزيارة هي الربيع (مايو-يونيو) والخريف (سبتمبر-أكتوبر) حيث الطقس مريح والازدحام أقل. </p>
+                    </div>
+
+                    <div class="cost-info">
+                        <h3>💰 التكاليف التقديرية</h3>
+                        <ul>
+                            <li>الإقامة: 70-200€ في الليلة</li>
+                            <li>الطعام: 15-45€ للوجبة حسب النوع (سوق / مطعم متوسط).</li>
+                            <li>التنقل: ~1.90€ للرحلة (ميترو/ترام).</li>
+                            <li>المعالم: معظم التجول في المدينة القديمة مجاني، وبعض المتاحف 5-20€.</li>
+                        </ul>
+                    </div>
+
+                    <div class="tips-info">
+                        <h3>💡 نصائح السفر</h3>
+                        <ul>
+                            <li>ابدأ جولتك صباحًا في <strong>Vieux Nice</strong> قبل ازدحام السوق في <em>Cours Saleya</em>. </li>
+                            <li>اصعد إلى تل القلعة للحصول على أفضل صور للمدينة والخليج.</li>
+                            <li>جرب الأطعمة المحلية مثل <strong>socca</strong> و<span>pan bagnat</span> من الأكشاك التقليدية.</li>
+                            <li>احذر من النشالين في المناطق السياحية المكتظة، خصوصًا قرب الممشى.</li>
+                            <li>استخدم النقل العام أو امشِ، لأن أجزاء من المدينة القديمة ضيقة والصعود فيها قد يحتاج للياقة.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="map-section">
+                <h3>📍 الموقع على الخريطة</h3>
+                <div class="map-container">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d57523.123456789!2d7.257472!3d43.710173!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12cdc235b1f8b7d9%3A0x50b3c5d4a1e2f6c!2sNice%2C%20France!5e0!3m2!1sen!2s!4v1700000000000"
+                        width="100%" 
+                        height="300" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+
+            <div class="booking-links">
+                <h3>🔗 روابط مفيدة للحجز</h3>
+                <div class="links-grid">
+                    <a href="https://www.booking.com" target="_blank" rel="noopener noreferrer" class="booking-link">
+                        <span>🏨</span>
+                        <div>
+                            <h4>Booking.com</h4>
+                            <p>حجز الفنادق</p>
+                        </div>
+                    </a>
+                    <a href="https://www.skyscanner.com" target="_blank" rel="noopener noreferrer" class="booking-link">
+                        <span>✈️</span>
+                        <div>
+                            <h4>Skyscanner</h4>
+                            <p>حجز الطيران</p>
+                        </div>
+                    </a>
+                    <a href="https://www.tripadvisor.com" target="_blank" rel="noopener noreferrer" class="booking-link">
+                        <span>🎯</span>
+                        <div>
+                            <h4>TripAdvisor</h4>
+                            <p>الأنشطة والجولات</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Lyon Details -->
+<section id="lyon-details" class="city-details">
+    <div class="container">
+        <div class="details-header">
+            <h2>ليون - عاصمة الذوق الفرنسي</h2>
+            <button class="close-btn" onclick="closeCityDetails()" aria-label="إغلاق التفاصيل">&times;</button>
+        </div>
+        
+        <div class="details-content">
+            <div class="details-grid">
+                <div class="details-text">
+                    <h3>🏛️ أهم المعالم السياحية</h3>
+                    <ul>
+                        <li><strong>المدينة القديمة (Vieux Lyon):</strong> أزقة ضيقة مرصوفة بالحجارة، مع مبانٍ من عصر النهضة ومطاعم تقليدية.</li>
+                        <li><strong>بازيليك نوتردام دي فورفيير (Basilique Notre-Dame de Fourvière):</strong> كنيسة مذهلة على تلة تطل على المدينة.</li>
+                        <li><strong>المسرح الروماني في فورفيير:</strong> آثار رومانية قديمة تستضيف عروضًا فنية وموسيقية.</li>
+                        <li><strong>ساحة بيلكور (Place Bellecour):</strong> إحدى أكبر الساحات في أوروبا.</li>
+                        <li><strong>بارك دو لا تيت دور (Parc de la Tête d'Or):</strong> حديقة واسعة تضم بحيرة وحديقة حيوانات.</li>
+                    </ul>
+
+                    <h3>🍽️ الأكل الشعبي</h3>
+                    <ul>
+                        <li><strong>الكينيل (Quenelle):</strong> طبق ليوني تقليدي مصنوع من السمك أو الدجاج مع صلصة غنية.</li>
+                        <li><strong>سلاطة ليونيز (Salade Lyonnaise):</strong> سلطة بالخس، لحم مقدد، بيضة مسلوقة، وصوص خردل.</li>
+                        <li><strong>سوسيسون (Saucisson):</strong> نقانق جافة تقدم كمقبلات.</li>
+                        <li><strong>التارت البراليني (Tarte aux Pralines):</strong> فطيرة حلوة من البرالين الوردي.</li>
+                        <li><strong>بوشون ليوني (Bouchon Lyonnais):</strong> وجبات مطاعم محلية تقدم أطباقًا تقليدية دسمة.</li>
+                    </ul>
+                </div>
+                
+                <div class="details-sidebar">
+                    <div class="weather-info">
+                        <h3>🌤️ الطقس</h3>
+                        <p>مناخ محيطي-قاري: صيف دافئ، شتاء بارد ورطب أحيانًا. أفضل الأوقات للزيارة: مايو-يونيو، سبتمبر-أكتوبر.</p>
+                    </div>
+
+                    <div class="cost-info">
+                        <h3>💰 التكاليف التقديرية</h3>
+                        <ul>
+                            <li>الإقامة: 70-200€ في الليلة</li>
+                            <li>الطعام: 15-50€ للوجبة</li>
+                            <li>التنقل: 1.90€ للرحلة (ميترو/ترام)</li>
+                            <li>المعالم: 5-15€ لمعظم المتاحف والمواقع</li>
+                        </ul>
+                    </div>
+
+                    <div class="tips-info">
+                        <h3>💡 نصائح السفر</h3>
+                        <ul>
+                            <li>جرب الأكل في "Bouchon" للحصول على تجربة ليونية أصيلة.</li>
+                            <li>استمتع بالمشي على ضفاف نهر الرون ونهر الساون.</li>
+                            <li>استكشف "التروبول" (Traboules) وهي ممرات سرية بين المباني.</li>
+                            <li>احجز تذاكر المتاحف والمعالم مسبقًا في مواسم الذروة.</li>
+                            <li>استخدم بطاقة ليون سيتي باس للتوفير على النقل والدخول للمعالم.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="map-section">
+                <h3>📍 الموقع على الخريطة</h3>
+                <div class="map-container">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2781.999999!2d4.8357!3d45.7640!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f4ea5a2a6c4f3f%3A0xabcdef1234567890!2sLyon%2C%20France!5e0!3m2!1sar!2s!4v1700000000000"
+                        width="100%" 
+                        height="300" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+
+            <div class="booking-links">
+                <h3>🔗 روابط مفيدة للحجز</h3>
+                <div class="links-grid">
+                    <a href="https://www.booking.com" target="_blank" rel="noopener noreferrer" class="booking-link">
+                        <span>🏨</span>
+                        <div>
+                            <h4>Booking.com</h4>
+                            <p>حجز الفنادق</p>
+                        </div>
+                    </a>
+                    <a href="https://www.skyscanner.com" target="_blank" rel="noopener noreferrer" class="booking-link">
+                        <span>✈️</span>
+                        <div>
+                            <h4>Skyscanner</h4>
+                            <p>حجز الطيران</p>
+                        </div>
+                    </a>
+                    <a href="https://www.tripadvisor.com" target="_blank" rel="noopener noreferrer" class="booking-link">
+                        <span>🎯</span>
+                        <div>
+                            <h4>TripAdvisor</h4>
+                            <p>الأنشطة والجولات</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Photo Gallery -->
+    <section class="photo-gallery">
+        <div class="container">
+            <h2>معرض الصور</h2>
+            <div class="gallery-grid">
+                <img src="images/france/france_1.jpg" alt="فرنسا 1" onclick="openLightbox(this)">
+                <img src="images/france/france_2.jpg" alt="فرنسا 2" onclick="openLightbox(this)">
+                <img src="images/france/france_3.jpg" alt="فرنسا 3" onclick="openLightbox(this)">
+                <img src="images/france/france_4.jpg" alt="فرنسا 4" onclick="openLightbox(this)">
+                <img src="images/france/france_5.jpg" alt="فرنسا 5" onclick="openLightbox(this)">
+                <img src="images/france/france_6.jpg" alt="فرنسا 6" onclick="openLightbox(this)">
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox -->
+    <div id="lightbox" class="lightbox">
+        <span class="close-lightbox" onclick="closeLightbox()">&times;</span>
+        <img id="lightbox-img" src="" alt="">
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>عالم السياحة</h3>
+                    <p>دليلك الشامل لاستكشاف أجمل الوجهات السياحية في العالم</p>
+                </div>
+                <div class="footer-section">
+                    <h4>روابط سريعة</h4>
+                    <ul>
+                        <li><a href="index.html">الرئيسية</a></li>
+                        <li><a href="index.html#destinations">الوجهات</a></li>
+                        <li><a href="index.html#articles">المقالات</a></li>
+                        <li><a href="index.html#contact">اتصل بنا</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>الوجهات الشائعة</h4>
+                    <ul>
+                        <li><a href="morocco.html">المغرب</a></li>
+                        <li><a href="france.html">فرنسا</a></li>
+                        <li><a href="turkey.html">تركيا</a></li>
+                        <li><a href="japan.html">اليابان</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 عالم السياحة. جميع الحقوق محفوظة.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="country-script.js"></script>
+</body>
+</html>
+

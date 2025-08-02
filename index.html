@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+   
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>عالم السياحة - اكتشف أجمل الوجهات السياحية</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                 <div class="logo">
+                    <img src="images/morocco/00.jpg" alt="شعار الموقع" style="height: 60px;">
+                 </div>
+                <ul class="nav-menu">
+                    <li><a href="#home">الرئيسية</a></li>
+                    <li><a href="#destinations">الوجهات</a></li>
+                    <li><a href="#articles">المقالات</a></li>
+                    <li><a href="#contact">اتصل بنا</a></li>
+                    <li><a href="about.html">من نحن</a></li>
+                    <li><a href="privacy.html">سياسة الخصوصية</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>اكتشف أجمل الوجهات السياحية في العالم</h1>
+            <p>رحلة عبر أروع المدن والمعالم السياحية، من المغرب إلى اليابان</p>
+            <div class="search-container">
+                <input type="text" id="searchInput" placeholder="ابحث عن دولة أو مدينة...">
+                <button onclick="searchDestination()">🔍</button>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="images/morocco/morocco_2.jpg" alt="السياحة العالمية">
+        </div>
+    </section>
+
+    <!-- Featured Destinations -->
+    <section id="destinations" class="destinations">
+        <div class="container">
+            <h2>أشهر الوجهات السياحية</h2>
+            <div class="destinations-grid">
+                <div class="destination-card" onclick="openCountryPage('morocco')">
+                    <img src="images/morocco/morocco_1.jpg" alt="المغرب">
+                    <div class="card-content">
+                        <h3>المغرب</h3>
+                        <p>المدينة الحمراء وجمال الصحراء</p>
+                        <span class="explore-btn">استكشف المزيد</span>
+                    </div>
+                </div>
+
+                <div class="destination-card" onclick="openCountryPage('france')">
+                    <img src="images/france/france_1.jpg" alt="فرنسا">
+                    <div class="card-content">
+                        <h3>فرنسا</h3>
+                        <p>مدينة النور والرومانسية</p>
+                        <span class="explore-btn">استكشف المزيد</span>
+                    </div>
+                </div>
+
+                <div class="destination-card" onclick="openCountryPage('turkey')">
+                    <img src="images/turkey/turkey_1.jpg" alt="تركيا">
+                    <div class="card-content">
+                        <h3>تركيا</h3>
+                        <p>جسر بين الشرق والغرب</p>
+                        <span class="explore-btn">استكشف المزيد</span>
+                    </div>
+                </div>
+
+                <div class="destination-card" onclick="openCountryPage('japan')">
+                    <img src="images/japan/japan_1.jpg" alt="اليابان">
+                    <div class="card-content">
+                        <h3>اليابان</h3>
+                        <p>أرض الشمس المشرقة</p>
+                        <span class="explore-btn">استكشف المزيد</span>
+                    </div>
+                </div>
+
+                <div class="destination-card" onclick="openCountryPage('usa')">
+                    <img src="images/usa/usa_1.jpg" alt="الولايات المتحدة">
+                    <div class="card-content">
+                        <h3>الولايات المتحدة</h3>
+                        <p>أرض الأحلام والفرص</p>
+                        <span class="explore-btn">استكشف المزيد</span>
+                    </div>
+                </div>
+
+                <div class="destination-card" onclick="openCountryPage('italy')">
+                    <img src="images/italy/3.jpg" alt="Venice canal at sunset with historic buildings on both sides, domed church in the background, calm water reflecting colorful lights, sky with dramatic clouds, tranquil and romantic atmosphere">
+                    <div class="card-content">
+                        <h3>إيطاليا</h3>
+                        <p>مهد الحضارة والفن</p>
+                        <span class="explore-btn">استكشف المزيد</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Articles Section -->
+    <section id="articles" class="articles">
+        <div class="container">
+            <h2>مقالات سياحية</h2>
+            <div class="articles-grid">
+                <article class="article-card">
+                    <img src="images/11.webp" alt="أرخص الدول للسفر">
+                    <div class="article-content">
+                        <h3>أرخص 10 دول للسفر في 2025</h3>
+                        <p>مع voyagesاكتشف الوجهات السياحية الاقتصادية التي تقدم تجارب رائعة بأسعار معقولة.</p>
+                        
+                    </div>
+                </article>
+
+                <article class="article-card">
+                    <img src="images/OIP.webp" alt="أفضل وجهات الشتاء">
+                    <div class="article-content">
+                        <h3>أفضل وجهات السفر في فصل الشتاء</h3>
+                        <p>مع voyagesاستمتع بجمال الشتاء في هذه الوجهات الساحرة حول العالم.</p>
+                        
+                    </div>
+                </article>
+
+                <article class="article-card">
+                    <img src="images/morocco/OIP.jpg" alt="نصائح السفر">
+                    <div class="article-content">
+                        <h3>نصائح مهمة للمسافرين لأول مرة</h3>
+                        <p>voyages دليل شامل للمسافرين الجدد مع أهم النصائح والإرشادات.</p>
+                     
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>تواصل معنا</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>نحن هنا لمساعدتك</h3>
+                    <p>لديك أسئلة حول السفر أو تحتاج إلى نصائح؟ لا تتردد في التواصل معنا</p>
+                    <div class="contact-item">
+                        <span>📧</span>
+                        <p>tamimaissa114@gmail.com</p>
+                    </div>
+                    <div class="contact-item">
+                        <span>📱</span>
+                        <p>+212 775 4071 14</p>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <input type="text" placeholder="الاسم" required>
+                    <input type="email" placeholder="البريد الإلكتروني" required>
+                    <textarea placeholder="رسالتك" rows="5" required></textarea>
+                    <button type="submit">إرسال الرسالة</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>عالم السياحة</h3>
+                    <p>دليلك الشامل لاستكشاف أجمل الوجهات السياحية في العالم</p>
+                </div>
+                <div class="footer-section">
+                    <h4>روابط سريعة</h4>
+                   <div class="footer-section">
+                    <h4>روابط سريعة</h4>
+                    <ul>
+                        <li><a href="index.html">الرئيسية</a></li>
+                        <li><a href="#destinations">الوجهات</a></li>
+                        <li><a href="#articles">المقالات</a></li>
+                        <li><a href="#contact">اتصل بنا</a></li>
+                        <li><a href="about.html">من نحن</a></li>
+                        <li><a href="privacy.html">سياسة الخصوصية</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>الوجهات الشائعة</h4>
+                    <ul>
+                        <li><a href="morocco.html">المغرب</a></li>
+                        <li><a href="france.html">فرنسا</a></li>
+                        <li><a href="turkey.html">تركيا</a></li>
+                        <li><a href="japan.html">اليابان</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 عالم السياحة. جميع الحقوق محفوظة.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

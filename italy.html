@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>السياحة في إيطاليا - عالم السياحة</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="country-styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <h1>🌍 عالم السياحة</h1>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html">الرئيسية</a></li>
+                    <li><a href="index.html#destinations">الوجهات</a></li>
+                    <li><a href="index.html#articles">المقالات</a></li>
+                    <li><a href="index.html#contact">اتصل بنا</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Country Hero -->
+    <section class="country-hero">
+        <div class="hero-image">
+            <img src="images/italy/1.jpg" alt="إيطاليا">
+            <div class="hero-overlay">
+                <div class="hero-content">
+                    <h1>🇮🇹 إيطاليا</h1>
+                    <p>مهد الحضارة والفن</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Country Info -->
+    <section class="country-info">
+        <div class="container">
+            <div class="info-grid">
+                <div class="info-text">
+                    <h2>اكتشف سحر إيطاليا</h2>
+                    <p>إيطاليا، مهد الحضارة الرومانية وعصر النهضة، بلد يجمع بين التاريخ العريق والفن الرائع والمطبخ الشهي. من الكولوسيوم في روما إلى قنوات البندقية الرومانسية، تقدم إيطاليا كنوزاً لا تُنسى في كل زاوية.</p>
+                    
+                    <div class="quick-facts">
+                        <div class="fact">
+                            <span class="fact-icon">🏛️</span>
+                            <div>
+                                <h4>العاصمة</h4>
+                                <p>روما</p>
+                            </div>
+                        </div>
+                        <div class="fact">
+                            <span class="fact-icon">💬</span>
+                            <div>
+                                <h4>اللغة</h4>
+                                <p>الإيطالية</p>
+                            </div>
+                        </div>
+                        <div class="fact">
+                            <span class="fact-icon">💰</span>
+                            <div>
+                                <h4>العملة</h4>
+                                <p>اليورو</p>
+                            </div>
+                        </div>
+                        <div class="fact">
+                            <span class="fact-icon">🌡️</span>
+                            <div>
+                                <h4>أفضل وقت للزيارة</h4>
+                                <p>أبريل - يونيو، سبتمبر - أكتوبر</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="info-image">
+                    <img src="images/italy/0.jpg" alt="معالم إيطاليا">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cities Section -->
+    <section class="cities-section">
+        <div class="container">
+            <h2>أشهر المدن السياحية</h2>
+            <div class="cities-grid">
+                <div class="city-card" onclick="openCityDetails('rome')">
+                    <img src="images/italy/1.jpg" alt="روما">
+                    <div class="city-content">
+                        <h3>روما</h3>
+                        <p>المدينة الخالدة وعاصمة الإمبراطورية</p>
+                        <span class="explore-btn">استكشف المدينة</span>
+                    </div>
+                </div>
+
+                <div class="city-card" onclick="openCityDetails('venice')">
+                    <img src="images/italy/2.jpg" alt="البندقية">
+                    <div class="city-content">
+                        <h3>البندقية</h3>
+                        <p>مدينة القنوات والرومانسية</p>
+                        <span class="explore-btn">استكشف المدينة</span>
+                    </div>
+                </div>
+
+                <div class="city-card" onclick="openCityDetails('florence')">
+                    <img src="images/italy/3.jpg" alt="فلورنسا">
+                    <div class="city-content">
+                        <h3>فلورنسا</h3>
+                        <p>مهد عصر النهضة والفن</p>
+                        <span class="explore-btn">استكشف المدينة</span>
+                    </div>
+                </div>
+
+                <div class="city-card" onclick="openCityDetails('milan')">
+                    <img src="images/italy/4.jpg" alt="ميلان">
+                    <div class="city-content">
+                        <h3>ميلان</h3>
+                        <p>عاصمة الموضة والتصميم</p>
+                        <span class="explore-btn">استكشف المدينة</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rome Details -->
+    <section id="rome-details" class="city-details">
+        <div class="container">
+            <div class="details-header">
+                <h2>روما - المدينة الخالدة</h2>
+                <button class="close-btn" onclick="closeCityDetails()">&times;</button>
+            </div>
+            
+            <div class="details-content">
+                <div class="details-grid">
+                    <div class="details-text">
+                        <h3>🏛️ أهم المعالم السياحية</h3>
+                        <ul>
+                            <li><strong>الكولوسيوم:</strong> أشهر مدرج روماني في العالم</li>
+                            <li><strong>الفاتيكان:</strong> أصغر دولة في العالم وكنيسة سيستين</li>
+                            <li><strong>نافورة تريفي:</strong> أشهر نافورة في روما</li>
+                            <li><strong>البانثيون:</strong> معبد روماني قديم محفوظ بشكل رائع</li>
+                            <li><strong>المنتدى الروماني:</strong> قلب الإمبراطورية الرومانية القديمة</li>
+                        </ul>
+
+                        <h3>🍽️ الأكل الشعبي</h3>
+                        <ul>
+                            <li><strong>الباستا:</strong> أطباق المعكرونة الإيطالية الأصيلة</li>
+                            <li><strong>البيتزا الرومانية:</strong> قاعدة رقيقة ومقرمشة</li>
+                            <li><strong>الجيلاتو:</strong> الآيس كريم الإيطالي الشهير</li>
+                            <li><strong>الكاربونارا:</strong> طبق معكرونة روماني تقليدي</li>
+                            <li><strong>الإسبريسو:</strong> القهوة الإيطالية الأصيلة</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="details-sidebar">
+                        <div class="weather-info">
+                            <h3>🌤️ الطقس</h3>
+                            <p>مناخ متوسطي. الصيف حار وجاف، الشتاء معتدل مع أمطار متقطعة.</p>
+                            <p><strong>أفضل أوقات الزيارة:</strong> أبريل-يونيو، سبتمبر-أكتوبر</p>
+                        </div>
+
+                        <div class="cost-info">
+                            <h3>💰 التكاليف التقديرية</h3>
+                            <ul>
+                                <li>الإقامة: 60-250€ في الليلة</li>
+                                <li>الطعام: 12-45€ للوجبة</li>
+                                <li>التنقل: 1.50€ للرحلة</li>
+                                <li>المعالم: 8-25€ للدخول</li>
+                            </ul>
+                        </div>
+
+                        <div class="tips-info">
+                            <h3>💡 نصائح السفر</h3>
+                            <ul>
+                                <li>احجز تذاكر المعالم مسبقاً</li>
+                                <li>تجنب المطاعم قرب المعالم السياحية</li>
+                                <li>ارتدِ أحذية مريحة للمشي</li>
+                                <li>احذر من النشالين في المناطق المزدحمة</li>
+                                <li>تعلم بعض العبارات الإيطالية الأساسية</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="map-section">
+                    <h3>📍 الموقع على الخريطة</h3>
+                    <div class="map-container">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2969.8174!2d12.4964!3d41.9028!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f6196f9928ebb%3A0xb90f770693656e38!2sRome%2C%20Italy!5e0!3m2!1sen!2s!4v1234567890"
+                            width="100%" 
+                            height="300" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy">
+                        </iframe>
+                    </div>
+                </div>
+
+                <div class="booking-links">
+                    <h3>🔗 روابط مفيدة للحجز</h3>
+                    <div class="links-grid">
+                        <a href="https://www.booking.com" target="_blank" class="booking-link">
+                            <span>🏨</span>
+                            <div>
+                                <h4>Booking.com</h4>
+                                <p>حجز الفنادق</p>
+                            </div>
+                        </a>
+                        <a href="https://www.skyscanner.com" target="_blank" class="booking-link">
+                            <span>✈️</span>
+                            <div>
+                                <h4>Skyscanner</h4>
+                                <p>حجز الطيران</p>
+                            </div>
+                        </a>
+                        <a href="https://www.tripadvisor.com" target="_blank" class="booking-link">
+                            <span>🎯</span>
+                            <div>
+                                <h4>TripAdvisor</h4>
+                                <p>الأنشطة والجولات</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- Venice Details -->
+<section id="venice-details" class="city-details">
+    <div class="container">
+        <div class="details-header">
+            <h2>البندقية - مدينة الحب والقنوات الساحرة</h2>
+            <button class="close-btn" onclick="closeCityDetails()" aria-label="إغلاق التفاصيل">&times;</button>
+        </div>
+        
+        <div class="details-content">
+            <div class="details-grid">
+                <div class="details-text">
+                    <h3>🏛️ أهم المعالم السياحية</h3>
+                    <ul>
+                        <li><strong>ساحة سان ماركو (Piazza San Marco):</strong> قلب المدينة التاريخي، تضم كاتدرائية سان ماركو وبرج الجرس.</li>
+                        <li><strong>قصر دوجي (Doge's Palace):</strong> مقر حكام البندقية السابقين، تحفة معمارية من العصور الوسطى.</li>
+                        <li><strong>جسر ريالتو (Rialto Bridge):</strong> أشهر جسر فوق القناة الكبرى، مثالي للتصوير والتسوق.</li>
+                        <li><strong>القناة الكبرى (Grand Canal):</strong> شريان المدينة المائي، يمكن استكشافه عبر الجندول أو الفابوريتو.</li>
+                        <li><strong>جزيرة بورانو:</strong> جزيرة ملونة تشتهر بصناعة الدانتيل ومنازلها الزاهية.</li>
+                    </ul>
+
+                    <h3>🍝 الأكل الشعبي</h3>
+                    <ul>
+                        <li><strong>ريزوتو الحبار (Risotto al Nero di Seppia):</strong> أرز بالحبار وصوص الحبر الأسود.</li>
+                        <li><strong>ساردين إن ساور (Sarde in Saor):</strong> سردين متبل بالبصل والخل والزبيب.</li>
+                        <li><strong>بيغولي في صوص الأنشوجة:</strong> نوع من المعكرونة التقليدية مع صوص مالح.</li>
+                        <li><strong>تيراميسو:</strong> الحلوى الإيطالية الشهيرة التي نشأت في المنطقة.</li>
+                        <li><strong>كيتشتي (Cicchetti):</strong> مقبلات صغيرة تُقدم في الحانات المحلية (Bacaro).</li>
+                    </ul>
+                </div>
+                
+                <div class="details-sidebar">
+                    <div class="weather-info">
+                        <h3>🌤️ الطقس</h3>
+                        <p>مناخ قاري معتدل: صيف دافئ ورطب، شتاء بارد ورطب. أفضل الأوقات للزيارة: أبريل-يونيو، سبتمبر-أكتوبر.</p>
+                    </div>
+
+                    <div class="cost-info">
+                        <h3>💰 التكاليف التقديرية</h3>
+                        <ul>
+                            <li>الإقامة: 80-250€ في الليلة</li>
+                            <li>الطعام: 15-60€ للوجبة</li>
+                            <li>التنقل: 7.5€ لرحلة واحدة بالفابوريتو (الحافلة المائية)</li>
+                            <li>المعالم: 10-25€ حسب الموقع</li>
+                        </ul>
+                    </div>
+
+                    <div class="tips-info">
+                        <h3>💡 نصائح السفر</h3>
+                        <ul>
+                            <li>احجز تذاكر المعالم مسبقًا لتجنب الطوابير.</li>
+                            <li>استكشف الأحياء الأقل ازدحامًا مثل كاناريجيو وكاستيلو.</li>
+                            <li>جرب جولة "باكارو" لتذوق المقبلات المحلية.</li>
+                            <li>استخدم بطاقة Venezia Unica Pass للتوفير في التنقل والمعالم.</li>
+                            <li>تجنب السفر خلال موسم الفيضانات (Acqua Alta) في الشتاء.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="map-section">
+                <h3>📍 الموقع على الخريطة</h3>
+                <div class="map-container">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2793.999999!2d12.3319!3d45.4397!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477eb1d2f8b9e0f%3A0xabcdef1234567890!2sVenice%2C%20Italy!5e0!3m2!1sar!2s!4v1700000000000"
+                        width="100%" 
+                        height="300" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+
+            <div class="booking-links">
+                <h3>🔗 روابط مفيدة للحجز</h3>
+                <div class="links-grid">
+                    <a href="https://www.booking.com" target="_blank" rel="noopener noreferrer" class="booking-link">
+                        <span>🏨</span>
+                        <div>
+                            <h4>Booking.com</h4>
+                            <p>حجز الفنادق</p>
+                        </div>
+                    </a>
+                    <a href="https://www.skyscanner.com" target="_blank" rel="noopener noreferrer" class="booking-link">
+                        <span>✈️</span>
+                        <div>
+                            <h4>Skyscanner</h4>
+                            <p>حجز الطيران</p>
+                        </div>
+                    </a>
+                    <a href="https://www.tripadvisor.com" target="_blank" rel="noopener noreferrer" class="booking-link">
+                        <span>🎯</span>
+                        <div>
+                            <h4>TripAdvisor</h4>
+                            <p>الأنشطة والجولات</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Florence Details -->
+<section id="florence-details" class="city-details">
+    <div class="container">
+        <div class="details-header">
+            <h2>فلورنسا - مهد الفن والنهضة الإيطالية</h2>
+            <button class="close-btn" onclick="closeCityDetails()" aria-label="إغلاق التفاصيل">&times;</button>
+        </div>
+        
+        <div class="details-content">
+            <div class="details-grid">
+                <div class="details-text">
+                    <h3>🏛️ أهم المعالم السياحية</h3>
+                    <ul>
+                        <li><strong>كاتدرائية سانتا ماريا ديل فيوري:</strong> تحفة معمارية ذات قبة ضخمة، من أبرز رموز المدينة.</li>
+                        <li><strong>معرض أوفيزي (Uffizi Gallery):</strong> أحد أقدم المتاحف الفنية في العالم، يضم أعمال مايكل أنجلو وبوتيتشيلي.</li>
+                        <li><strong>جسر بونتي فيكيو:</strong> جسر تاريخي فوق نهر آرنو، تصطف عليه محلات المجوهرات.</li>
+                        <li><strong>قصر بيتي (Palazzo Pitti):</strong> مقر سابق لعائلة ميديشي، يضم متاحف وحدائق رائعة.</li>
+                        <li><strong>ساحة بيازا ديلا سيجنوريا:</strong> مركز سياسي وتاريخي، تضم تماثيل شهيرة ومباني أثرية.</li>
+                    </ul>
+
+                    <h3>🍝 الأكل الشعبي</h3>
+                    <ul>
+                        <li><strong>بيستيكا ألا فيورنتينا:</strong> شريحة لحم مشوية على الطريقة الفلورنسية.</li>
+                        <li><strong>بابا أل بومودورو:</strong> خبز قديم مطهو مع الطماطم وزيت الزيتون.</li>
+                        <li><strong>ريبوليتا:</strong> حساء تقليدي بالخضار والخبز.</li>
+                        <li><strong>كانولي توسكان:</strong> حلوى محشوة بالكريمة أو الجبن المحلي.</li>
+                        <li><strong>جيلاتو فلورنسي:</strong> آيس كريم إيطالي بنكهات طبيعية.</li>
+                    </ul>
+                </div>
+                
+                <div class="details-sidebar">
+                    <div class="weather-info">
+                        <h3>🌤️ الطقس</h3>
+                        <p>مناخ متوسطي: صيف حار وجاف، شتاء معتدل. أفضل الأوقات للزيارة: أبريل-يونيو، سبتمبر-أكتوبر.</p>
+                    </div>
+
+                    <div class="cost-info">
+                        <h3>💰 التكاليف التقديرية</h3>
+                        <ul>
+                            <li>الإقامة: 70-220€ في الليلة</li>
+                            <li>الطعام: 15-50€ للوجبة</li>
+                            <li>التنقل: 1.5€ للرحلة (حافلة/ترام)</li>
+                            <li>المعالم: 10-25€ حسب الموقع</li>
+                        </ul>
+                    </div>
+
+                    <div class="tips-info">
+                        <h3>💡 نصائح السفر</h3>
+                        <ul>
+                            <li>احجز تذاكر المتاحف مسبقًا لتجنب الانتظار الطويل.</li>
+                            <li>استمتع بالمشي في الأزقة القديمة وساحات المدينة.</li>
+                            <li>جرب الأكل في المطاعم المحلية بعيدًا عن المناطق السياحية.</li>
+                            <li>استخدم بطاقة Firenze Card للدخول إلى أكثر من 70 معلمًا.</li>
+                            <li>قم برحلة يومية إلى ريف توسكانا لتذوق النبيذ وزيت الزيتون.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="map-section">
+                <h3>📍 الموقع على الخريطة</h3>
+                <div class="map-container">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2793.999999!2d11.2558!3d43.7696!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132a540f8b9e0f%3A0xabcdef1234567890!2sFlorence%2C%20Italy!5e0!3m2!1sar!2s!4v1700000000000"
+                        width="100%" 
+                        height="300" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+
+            <div class="booking-links">
+                <h3>🔗 روابط مفيدة للحجز</h3>
+                <div class="links-grid">
+                    <a href="https://www.booking.com" target="_blank" rel="noopener noreferrer" class="booking-link">
+                        <span>🏨</span>
+                        <div>
+                            <h4>Booking.com</h4>
+                            <p>حجز الفنادق</p>
+                        </div>
+                    </a>
+                    <a href="https://www.skyscanner.com" target="_blank" rel="noopener noreferrer" class="booking-link">
+                        <span>✈️</span>
+                        <div>
+                            <h4>Skyscanner</h4>
+                            <p>حجز الطيران</p>
+                        </div>
+                    </a>
+                    <a href="https://www.tripadvisor.com" target="_blank" rel="noopener noreferrer" class="booking-link">
+                        <span>🎯</span>
+                        <div>
+                            <h4>TripAdvisor</h4>
+                            <p>الأنشطة والجولات</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Milan Details -->
+<section id="milan-details" class="city-details">
+    <div class="container">
+        <div class="details-header">
+            <h2>ميلان - عاصمة الأناقة والفن الإيطالي</h2>
+            <button class="close-btn" onclick="closeCityDetails()" aria-label="إغلاق التفاصيل">&times;</button>
+        </div>
+
+        <div class="details-content">
+            <div class="details-grid">
+                <div class="details-text">
+                    <h3>🏛️ أهم المعالم السياحية</h3>
+                    <ul>
+                        <li><strong>كاتدرائية ميلانو (Duomo):</strong> أكبر كاتدرائية قوطية في العالم، تحفة معمارية مذهلة.</li>
+                        <li><strong>غاليريا فيتوريو إيمانويل الثاني:</strong> مركز تسوق تاريخي بزجاج مقبب وماركات فاخرة.</li>
+                        <li><strong>دار أوبرا لا سكالا:</strong> من أشهر دور الأوبرا في العالم، ذات تصميم داخلي فاخر.</li>
+                        <li><strong>قلعة سفورزيسكو:</strong> قلعة من العصور الوسطى تضم متاحف فنية وتاريخية.</li>
+                        <li><strong>متحف ليوناردو دافنشي:</strong> يعرض اختراعاته ونماذج النقل البري والجوي.</li>
+                    </ul>
+
+                    <h3>🍝 الأكل الشعبي</h3>
+                    <ul>
+                        <li><strong>ريزوتو ألا ميلانيزي:</strong> أرز بالزعفران والمرق، طبق تقليدي فاخر.</li>
+                        <li><strong>أوسوبوكو:</strong> لحم العجل المطهو ببطء مع الخضار والصلصة.</li>
+                        <li><strong>كوتوليتا ألا ميلانيزي:</strong> شريحة لحم مقلية على الطريقة المحلية.</li>
+                        <li><strong>نيجروني سبالياتو:</strong> مشروب ميلاني شهير يجمع بين النكهات الإيطالية.</li>
+                        <li><strong>L’Aperitivo:</strong> طقس ميلاني لتناول مشروب قبل العشاء مع وجبات خفيفة مجانية.</li>
+                    </ul>
+                </div>
+
+                <div class="details-sidebar">
+                    <div class="weather-info">
+                        <h3>🌤️ الطقس</h3>
+                        <p>مناخ قاري معتدل: صيف دافئ، شتاء بارد ورطب. أفضل وقت للزيارة: مايو-يونيو، سبتمبر.</p>
+                    </div>
+
+                    <div class="cost-info">
+                        <h3>💰 التكاليف التقديرية</h3>
+                        <ul>
+                            <li>الإقامة: 80-250€ في الليلة</li>
+                            <li>الطعام: 20-60€ للوجبة</li>
+                            <li>التنقل: 2€ للرحلة (مترو/ترام)</li>
+                            <li>المعالم: 10-30€ حسب الموقع</li>
+                        </ul>
+                    </div>
+
+                    <div class="tips-info">
+                        <h3>💡 نصائح السفر</h3>
+                        <ul>
+                            <li>احجز تذاكر كاتدرائية الدومو مسبقًا لتجنب الطوابير.</li>
+                            <li>استمتع بجولة في حي بريرا الفني والمقاهي الراقية.</li>
+                            <li>تسوّق في شارع مونتي نابوليوني لأرقى الماركات العالمية.</li>
+                            <li>اكتشف الحياة الليلية في منطقة Navigli على ضفاف القنوات.</li>
+                            <li>احرص على تجربة الـ Aperitivo في أحد البارات بين 6 و9 مساءً.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="map-section">
+                <h3>📍 الموقع على الخريطة</h3>
+                <div class="map-container">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2793.999999!2d9.1900!3d45.4642!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4786c6a4e5e0f%3A0xabcdef1234567890!2sMilan%2C%20Italy!5e0!3m2!1sar!2s!4v1700000000000"
+                        width="100%" 
+                        height="300" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+
+            <div class="booking-links">
+                <h3>🔗 روابط مفيدة للحجز</h3>
+                <div class="links-grid">
+                    <a href="https://www.booking.com" target="_blank" rel="noopener noreferrer" class="booking-link">
+                        <span>🏨</span>
+                        <div>
+                            <h4>Booking.com</h4>
+                            <p>حجز الفنادق</p>
+                        </div>
+                    </a>
+                    <a href="https://www.skyscanner.com" target="_blank" rel="noopener noreferrer" class="booking-link">
+                        <span>✈️</span>
+                        <div>
+                            <h4>Skyscanner</h4>
+                            <p>حجز الطيران</p>
+                        </div>
+                    </a>
+                    <a href="https://www.tripadvisor.com" target="_blank" rel="noopener noreferrer" class="booking-link">
+                        <span>🎯</span>
+                        <div>
+                            <h4>TripAdvisor</h4>
+                            <p>الأنشطة والجولات</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    <!-- Photo Gallery -->
+    <section class="photo-gallery">
+        <div class="container">
+            <h2>معرض الصور</h2>
+            <div class="gallery-grid">
+                <img src="images/italy/italy_1.jpg" alt="إيطاليا 1" onclick="openLightbox(this)">
+                <img src="images/italy/italy_2.jpg" alt="إيطاليا 2" onclick="openLightbox(this)">
+                <img src="images/italy/italy_3.jpg" alt="إيطاليا 3" onclick="openLightbox(this)">
+                <img src="images/italy/italy_4.jpg" alt="إيطاليا 4" onclick="openLightbox(this)">
+                <img src="images/italy/italy_5.jpg" alt="إيطاليا 5" onclick="openLightbox(this)">
+                <img src="images/italy/italy_6.jpg" alt="إيطاليا 6" onclick="openLightbox(this)">
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox -->
+    <div id="lightbox" class="lightbox">
+        <span class="close-lightbox" onclick="closeLightbox()">&times;</span>
+        <img id="lightbox-img" src="" alt="">
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>عالم السياحة</h3>
+                    <p>دليلك الشامل لاستكشاف أجمل الوجهات السياحية في العالم</p>
+                </div>
+                <div class="footer-section">
+                    <h4>روابط سريعة</h4>
+                    <ul>
+                        <li><a href="index.html">الرئيسية</a></li>
+                        <li><a href="index.html#destinations">الوجهات</a></li>
+                        <li><a href="index.html#articles">المقالات</a></li>
+                        <li><a href="index.html#contact">اتصل بنا</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>الوجهات الشائعة</h4>
+                    <ul>
+                        <li><a href="morocco.html">المغرب</a></li>
+                        <li><a href="france.html">فرنسا</a></li>
+                        <li><a href="turkey.html">تركيا</a></li>
+                        <li><a href="japan.html">اليابان</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 عالم السياحة. جميع الحقوق محفوظة.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="country-script.js"></script>
+</body>
+</html>
+
